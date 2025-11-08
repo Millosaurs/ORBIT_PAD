@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
@@ -24,7 +25,7 @@ export const Navbar = () => {
         <nav className="relative">
             <div className="flex justify-between items-center p-6 px-6 md:px-12">
                 {/* Logo */}
-                <div className="flex items-center">
+                <Link href="/" className="flex items-center">
                     <Image
                         src={isDark ? "/logo-1.png" : "/logo-0.png"}
                         alt="Logo"
@@ -37,47 +38,33 @@ export const Navbar = () => {
                             LLC
                         </sub>
                     </span>
-                </div>
+                </Link>
 
                 {/* Desktop Navigation */}
                 <div className="hidden lg:flex items-center gap-2">
                     <ul className="flex space-x-2 xl:space-x-4">
-                        <Button
-                            variant={"ghost"}
-                            className="text-lg xl:text-xl"
-                        >
-                            About us
-                        </Button>
-                        <Button
-                            variant={"ghost"}
-                            className="text-lg xl:text-xl"
-                        >
-                            Services
-                        </Button>
-                        <Button
-                            variant={"ghost"}
-                            className="text-lg xl:text-xl"
-                        >
-                            Portfolio
-                        </Button>
-                        <Button
-                            variant={"ghost"}
-                            className="text-lg xl:text-xl"
-                        >
-                            Pricing
-                        </Button>
-                        <Button
-                            variant={"ghost"}
-                            className="text-lg xl:text-xl"
-                        >
-                            Blog
-                        </Button>
-                        <Button
+                        <Link href="/about">
+                            <Button
+                                variant={"ghost"}
+                                className="text-lg xl:text-xl"
+                            >
+                                About
+                            </Button>
+                        </Link>
+                        <Link href="/services">
+                            <Button
+                                variant={"ghost"}
+                                className="text-lg xl:text-xl"
+                            >
+                                Services
+                            </Button>
+                        </Link>
+                        {/*<Button
                             variant={"default"}
                             className="text-lg xl:text-xl transition-all duration-300 ease-in-out px-4"
                         >
                             Contact
-                        </Button>
+                        </Button>*/}
                     </ul>
                     <ThemeToggle />
                 </div>
@@ -103,48 +90,29 @@ export const Navbar = () => {
             {isMenuOpen && (
                 <div className="lg:hidden absolute top-full left-0 right-0 bg-background border-t border-border shadow-lg z-50 rounded-md">
                     <ul className="flex flex-col p-4 space-y-2">
-                        <Button
-                            variant={"ghost"}
-                            className="text-lg w-full justify-start"
-                            onClick={toggleMenu}
-                        >
-                            About us
-                        </Button>
-                        <Button
-                            variant={"ghost"}
-                            className="text-lg w-full justify-start"
-                            onClick={toggleMenu}
-                        >
-                            Services
-                        </Button>
-                        <Button
-                            variant={"ghost"}
-                            className="text-lg w-full justify-start"
-                            onClick={toggleMenu}
-                        >
-                            Portfolio
-                        </Button>
-                        <Button
-                            variant={"ghost"}
-                            className="text-lg w-full justify-start"
-                            onClick={toggleMenu}
-                        >
-                            Pricing
-                        </Button>
-                        <Button
-                            variant={"ghost"}
-                            className="text-lg w-full justify-start"
-                            onClick={toggleMenu}
-                        >
-                            Blog
-                        </Button>
-                        <Button
+                        <Link href="/about" onClick={toggleMenu}>
+                            <Button
+                                variant={"ghost"}
+                                className="text-lg w-full justify-start"
+                            >
+                                About
+                            </Button>
+                        </Link>
+                        <Link href="/services" onClick={toggleMenu}>
+                            <Button
+                                variant={"ghost"}
+                                className="text-lg w-full justify-start"
+                            >
+                                Services
+                            </Button>
+                        </Link>
+                        {/*<Button
                             variant={"default"}
                             className="text-lg  transition-all duration-300 ease-in-out w-full"
                             onClick={toggleMenu}
                         >
                             Contact
-                        </Button>
+                        </Button>*/}
                     </ul>
                 </div>
             )}

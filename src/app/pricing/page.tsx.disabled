@@ -1,0 +1,281 @@
+// "use client";
+
+// import { Navbar } from "@/components/Navbar";
+// import { Footer } from "@/components/sections/Footer";
+// import { Button } from "@/components/ui/button";
+
+// export default function PricingPage() {
+//     return (
+//         <>
+//             {/* Main Content - Full Screen */}
+//             <div className="h-screen flex flex-col overflow-hidden">
+//                 <Navbar />
+
+//                 <main className="flex-1 px-6 md:px-12 py-12 overflow-hidden bg-background">
+//                     <div className="max-w-[1800px] mx-auto h-full flex flex-col">
+//                         {/* Header */}
+//                         <div className="mb-12 py-8 text-center shrink-0">
+//                             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
+//                                 Simple, Transparent Pricing
+//                             </h1>
+//                             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
+//                                 Choose the plan that fits your needs. All plans
+//                                 include our core features and dedicated support.
+//                             </p>
+//                         </div>
+
+//                         {/* Pricing Cards */}
+//                         <div className="grid lg:grid-cols-3 gap-8 flex-1 min-h-0">
+//                             {/* Starter Plan */}
+//                             <div className="space-y-6 p-8 rounded-xl bg-card border border-border hover:border-lime-400/50 transition-colors">
+//                                 <div>
+//                                     <h2 className="text-2xl font-bold mb-2">
+//                                         Starter
+//                                     </h2>
+//                                     <p className="text-muted-foreground text-sm">
+//                                         Perfect for small projects and MVPs
+//                                     </p>
+//                                 </div>
+
+//                                 <div className="py-4">
+//                                     <div className="flex items-baseline gap-2">
+//                                         <span className="text-5xl font-bold">
+//                                             $399
+//                                         </span>
+//                                         <span className="text-muted-foreground">
+//                                             /project
+//                                         </span>
+//                                     </div>
+//                                 </div>
+
+//                                 <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
+//                                     Get Started
+//                                 </Button>
+
+//                                 <div className="space-y-3 pt-4">
+//                                     <div className="flex items-start gap-3">
+//                                         <div className="w-1.5 h-1.5 rounded-full bg-lime-400 dark:bg-lime-500 mt-2 shrink-0"></div>
+//                                         <p className="text-sm text-muted-foreground">
+//                                             Up to 10 pages/screens
+//                                         </p>
+//                                     </div>
+//                                     <div className="flex items-start gap-3">
+//                                         <div className="w-1.5 h-1.5 rounded-full bg-lime-400 dark:bg-lime-500 mt-2 shrink-0"></div>
+//                                         <p className="text-sm text-muted-foreground">
+//                                             Fully responsive design
+//                                         </p>
+//                                     </div>
+//                                     <div className="flex items-start gap-3">
+//                                         <div className="w-1.5 h-1.5 rounded-full bg-lime-400 dark:bg-lime-500 mt-2 shrink-0"></div>
+//                                         <p className="text-sm text-muted-foreground">
+//                                             SEO optimization
+//                                         </p>
+//                                     </div>
+//                                     <div className="flex items-start gap-3">
+//                                         <div className="w-1.5 h-1.5 rounded-full bg-lime-400 dark:bg-lime-500 mt-2 shrink-0"></div>
+//                                         <p className="text-sm text-muted-foreground">
+//                                             Modern UI/UX design
+//                                         </p>
+//                                     </div>
+//                                     <div className="flex items-start gap-3">
+//                                         <div className="w-1.5 h-1.5 rounded-full bg-lime-400 dark:bg-lime-500 mt-2 shrink-0"></div>
+//                                         <p className="text-sm text-muted-foreground">
+//                                             3 rounds of revisions
+//                                         </p>
+//                                     </div>
+//                                     <div className="flex items-start gap-3">
+//                                         <div className="w-1.5 h-1.5 rounded-full bg-lime-400 dark:bg-lime-500 mt-2 shrink-0"></div>
+//                                         <p className="text-sm text-muted-foreground">
+//                                             Source code included
+//                                         </p>
+//                                     </div>
+//                                     <div className="flex items-start gap-3">
+//                                         <div className="w-1.5 h-1.5 rounded-full bg-lime-400 dark:bg-lime-500 mt-2 shrink-0"></div>
+//                                         <p className="text-sm text-muted-foreground">
+//                                             60 days support
+//                                         </p>
+//                                     </div>
+//                                 </div>
+//                             </div>
+
+//                             {/* Professional Plan */}
+//                             <div className="space-y-6 p-8 rounded-xl bg-lime-400/10 dark:bg-lime-500/10 border-2 border-lime-400 dark:border-lime-500 relative">
+//                                 <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+//                                     <span className="bg-lime-400 dark:bg-lime-500 text-black dark:text-white px-4 py-1 rounded-full text-sm font-semibold">
+//                                         Most Popular
+//                                     </span>
+//                                 </div>
+
+//                                 <div>
+//                                     <h2 className="text-2xl font-bold mb-2">
+//                                         Professional
+//                                     </h2>
+//                                     <p className="text-muted-foreground text-sm">
+//                                         Ideal for growing businesses
+//                                     </p>
+//                                 </div>
+
+//                                 <div className="py-4">
+//                                     <div className="flex items-baseline gap-2">
+//                                         <span className="text-5xl font-bold">
+//                                             $799
+//                                         </span>
+//                                         <span className="text-muted-foreground">
+//                                             /project
+//                                         </span>
+//                                     </div>
+//                                 </div>
+
+//                                 <Button className="w-full bg-lime-400 dark:bg-lime-500 text-black dark:text-white hover:bg-lime-500 dark:hover:bg-lime-600">
+//                                     Get Started
+//                                 </Button>
+
+//                                 <div className="space-y-3 pt-4">
+//                                     <div className="flex items-start gap-3">
+//                                         <div className="w-1.5 h-1.5 rounded-full bg-lime-400 dark:bg-lime-500 mt-2 shrink-0"></div>
+//                                         <p className="text-sm text-muted-foreground">
+//                                             Up to 25 pages/screens
+//                                         </p>
+//                                     </div>
+//                                     <div className="flex items-start gap-3">
+//                                         <div className="w-1.5 h-1.5 rounded-full bg-lime-400 dark:bg-lime-500 mt-2 shrink-0"></div>
+//                                         <p className="text-sm text-muted-foreground">
+//                                             Custom design system
+//                                         </p>
+//                                     </div>
+//                                     <div className="flex items-start gap-3">
+//                                         <div className="w-1.5 h-1.5 rounded-full bg-lime-400 dark:bg-lime-500 mt-2 shrink-0"></div>
+//                                         <p className="text-sm text-muted-foreground">
+//                                             Advanced SEO & analytics
+//                                         </p>
+//                                     </div>
+//                                     <div className="flex items-start gap-3">
+//                                         <div className="w-1.5 h-1.5 rounded-full bg-lime-400 dark:bg-lime-500 mt-2 shrink-0"></div>
+//                                         <p className="text-sm text-muted-foreground">
+//                                             Database integration
+//                                         </p>
+//                                     </div>
+//                                     <div className="flex items-start gap-3">
+//                                         <div className="w-1.5 h-1.5 rounded-full bg-lime-400 dark:bg-lime-500 mt-2 shrink-0"></div>
+//                                         <p className="text-sm text-muted-foreground">
+//                                             API development
+//                                         </p>
+//                                     </div>
+//                                     <div className="flex items-start gap-3">
+//                                         <div className="w-1.5 h-1.5 rounded-full bg-lime-400 dark:bg-lime-500 mt-2 shrink-0"></div>
+//                                         <p className="text-sm text-muted-foreground">
+//                                             Unlimited revisions
+//                                         </p>
+//                                     </div>
+//                                     <div className="flex items-start gap-3">
+//                                         <div className="w-1.5 h-1.5 rounded-full bg-lime-400 dark:bg-lime-500 mt-2 shrink-0"></div>
+//                                         <p className="text-sm text-muted-foreground">
+//                                             6 months support
+//                                         </p>
+//                                     </div>
+//                                 </div>
+//                             </div>
+
+//                             {/* Enterprise Plan */}
+//                             <div className="space-y-6 p-8 rounded-xl bg-card border border-border hover:border-lime-400/50 transition-colors">
+//                                 <div>
+//                                     <h2 className="text-2xl font-bold mb-2">
+//                                         Enterprise
+//                                     </h2>
+//                                     <p className="text-muted-foreground text-sm">
+//                                         For large-scale applications
+//                                     </p>
+//                                 </div>
+
+//                                 <div className="py-4">
+//                                     <div className="flex items-baseline gap-2">
+//                                         <span className="text-5xl font-bold">
+//                                             Custom
+//                                         </span>
+//                                         <span className="text-muted-foreground">
+//                                             Let's discuss your needs
+//                                         </span>
+//                                     </div>
+//                                 </div>
+
+//                                 <Button
+//                                     variant="outline"
+//                                     className="w-full border-border hover:bg-accent"
+//                                 >
+//                                     Contact Sales
+//                                 </Button>
+
+//                                 <div className="space-y-3 pt-4">
+//                                     <div className="flex items-start gap-3">
+//                                         <div className="w-1.5 h-1.5 rounded-full bg-lime-400 dark:bg-lime-500 mt-2 shrink-0"></div>
+//                                         <p className="text-sm text-muted-foreground">
+//                                             Unlimited pages/screens
+//                                         </p>
+//                                     </div>
+//                                     <div className="flex items-start gap-3">
+//                                         <div className="w-1.5 h-1.5 rounded-full bg-lime-400 dark:bg-lime-500 mt-2 shrink-0"></div>
+//                                         <p className="text-sm text-muted-foreground">
+//                                             Enterprise-grade infrastructure
+//                                         </p>
+//                                     </div>
+//                                     <div className="flex items-start gap-3">
+//                                         <div className="w-1.5 h-1.5 rounded-full bg-lime-400 dark:bg-lime-500 mt-2 shrink-0"></div>
+//                                         <p className="text-sm text-muted-foreground">
+//                                             Dedicated development team
+//                                         </p>
+//                                     </div>
+//                                     <div className="flex items-start gap-3">
+//                                         <div className="w-1.5 h-1.5 rounded-full bg-lime-400 dark:bg-lime-500 mt-2 shrink-0"></div>
+//                                         <p className="text-sm text-muted-foreground">
+//                                             Advanced security features
+//                                         </p>
+//                                     </div>
+//                                     <div className="flex items-start gap-3">
+//                                         <div className="w-1.5 h-1.5 rounded-full bg-lime-400 dark:bg-lime-500 mt-2 shrink-0"></div>
+//                                         <p className="text-sm text-muted-foreground">
+//                                             Microservices architecture
+//                                         </p>
+//                                     </div>
+//                                     <div className="flex items-start gap-3">
+//                                         <div className="w-1.5 h-1.5 rounded-full bg-lime-400 dark:bg-lime-500 mt-2 shrink-0"></div>
+//                                         <p className="text-sm text-muted-foreground">
+//                                             24/7 priority support
+//                                         </p>
+//                                     </div>
+//                                     <div className="flex items-start gap-3">
+//                                         <div className="w-1.5 h-1.5 rounded-full bg-lime-400 dark:bg-lime-500 mt-2 shrink-0"></div>
+//                                         <p className="text-sm text-muted-foreground">
+//                                             SLA guarantee
+//                                         </p>
+//                                     </div>
+//                                 </div>
+//                             </div>
+//                         </div>
+
+//                         {/* Additional Info */}
+//                         <div className="mt-12 text-center shrink-0">
+//                             <p className="text-sm text-muted-foreground">
+//                                 All plans include source code, documentation,
+//                                 and deployment assistance.
+//                             </p>
+//                             <p className="text-sm text-muted-foreground mt-2">
+//                                 Need something custom?{" "}
+//                                 <a
+//                                     href="#"
+//                                     className="text-lime-400 dark:text-lime-500 hover:underline"
+//                                 >
+//                                     Let's talk
+//                                 </a>
+//                             </p>
+//                         </div>
+//                     </div>
+//                 </main>
+//             </div>
+
+//             {/* Footer - Appears after scroll */}
+//             <div className="w-full">
+//                 <Footer />
+//             </div>
+//         </>
+//     );
+// }

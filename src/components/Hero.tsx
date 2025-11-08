@@ -23,11 +23,10 @@ export default function Hero() {
                         Digital solutions for tomorrow
                     </h1>
 
-                    <p className="text-center sm:text-lg md:text-xl text-muted-foreground  lg:mx-0">
+                    <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0">
                         Our software design and development agency helps
                         businesses innovate and scale through custom web
-                        applications, mobile apps, UI/UX design, and enterprise
-                        solutions.
+                        applications, UI/UX design, and enterprise solutions.
                     </p>
 
                     <Button className=" sm:text-lg px-6 sm:px-8 py-4 sm:py-4 rounded-xl  transition-all duration-300">

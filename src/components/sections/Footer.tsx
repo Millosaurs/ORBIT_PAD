@@ -8,30 +8,20 @@ import { useTheme } from "../providers/ThemeProvider";
 
 const footerLinks = {
     company: [
-        { name: "About Us", href: "#" },
-        { name: "Careers", href: "#" },
-        { name: "Blog", href: "#" },
-        { name: "Contact", href: "#" },
+        { name: "About Us", href: "/about" },
+        { name: "Services", href: "/services" },
     ],
-    services: [
-        { name: "Web Development", href: "#" },
-        { name: "Mobile Apps", href: "#" },
-        { name: "UI/UX Design", href: "#" },
-        { name: "Cloud Solutions", href: "#" },
-    ],
-    resources: [
-        { name: "Documentation", href: "#" },
-        { name: "Case Studies", href: "#" },
-        { name: "Privacy Policy", href: "#" },
-        { name: "Terms of Service", href: "#" },
+    legal: [
+        { name: "Privacy Policy", href: "/privacy" },
+        { name: "Terms of Service", href: "/terms" },
     ],
 };
 
 const socialLinks = [
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Mail, href: "#", label: "Email" },
+    { icon: Github, href: "https://github.com", label: "GitHub" },
+    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
+    { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
+    { icon: Mail, href: "mailto:hello@orbitsllc.com", label: "Email" },
 ];
 
 export function Footer() {
@@ -46,7 +36,7 @@ export function Footer() {
         <footer className="bg-card border-t border-border">
             <div className="max-w-[1600px] mx-auto px-6 md:px-12 py-12 md:py-16">
                 {/* Main Footer Content */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-12 mb-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-12">
                     {/* Brand Column */}
                     <div className="lg:col-span-2">
                         <div className="flex items-center mb-4">
@@ -62,9 +52,9 @@ export function Footer() {
                             </span>
                         </div>
                         <p className="text-muted-foreground mb-6 max-w-sm">
-                            Crafting digital solutions for tomorrow. We help
-                            businesses innovate and scale through cutting-edge
-                            software development.
+                            Digital solutions for tomorrow. We help businesses
+                            innovate and scale through cutting-edge software
+                            development.
                         </p>
                         {/* Social Links */}
                         <div className="flex gap-3">
@@ -93,7 +83,7 @@ export function Footer() {
                                 <li key={link.name}>
                                     <a
                                         href={link.href}
-                                        className="text-muted-foreground hover:text-foreground transition-colors"
+                                        className="text-muted-foreground hover:text-lime-400 dark:hover:text-lime-500 transition-colors"
                                     >
                                         {link.name}
                                     </a>
@@ -102,32 +92,15 @@ export function Footer() {
                         </ul>
                     </div>
 
-                    {/* Services Links */}
+                    {/* Legal Links */}
                     <div>
-                        <h3 className="font-semibold text-lg mb-4">Services</h3>
+                        <h3 className="font-semibold text-lg mb-4">Legal</h3>
                         <ul className="space-y-3">
-                            {footerLinks.services.map((link) => (
+                            {footerLinks.legal.map((link) => (
                                 <li key={link.name}>
                                     <a
                                         href={link.href}
-                                        className="text-muted-foreground hover:text-foreground transition-colors"
-                                    >
-                                        {link.name}
-                                    </a>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-
-                    {/* Resources Links */}
-                    <div>
-                        <h3 className="font-semibold text-lg mb-4">Resources</h3>
-                        <ul className="space-y-3">
-                            {footerLinks.resources.map((link) => (
-                                <li key={link.name}>
-                                    <a
-                                        href={link.href}
-                                        className="text-muted-foreground hover:text-foreground transition-colors"
+                                        className="text-muted-foreground hover:text-lime-400 dark:hover:text-lime-500 transition-colors"
                                     >
                                         {link.name}
                                     </a>
@@ -147,22 +120,16 @@ export function Footer() {
                     </p>
                     <div className="flex gap-6 text-sm">
                         <a
-                            href="#"
-                            className="text-muted-foreground hover:text-foreground transition-colors"
+                            href="/privacy"
+                            className="text-muted-foreground hover:text-lime-400 dark:hover:text-lime-500 transition-colors"
                         >
                             Privacy
                         </a>
                         <a
-                            href="#"
-                            className="text-muted-foreground hover:text-foreground transition-colors"
+                            href="/terms"
+                            className="text-muted-foreground hover:text-lime-400 dark:hover:text-lime-500 transition-colors"
                         >
                             Terms
-                        </a>
-                        <a
-                            href="#"
-                            className="text-muted-foreground hover:text-foreground transition-colors"
-                        >
-                            Cookies
                         </a>
                     </div>
                 </div>
