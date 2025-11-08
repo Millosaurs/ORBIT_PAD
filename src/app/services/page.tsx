@@ -13,11 +13,11 @@ export default function ServicesPage() {
                 <main className="flex-1 px-6 md:px-12 py-12 overflow-hidden bg-background">
                     <div className="max-w-[1800px] mx-auto h-full flex flex-col">
                         {/* Header */}
-                        <div className="mb-12 py-8 text-center shrink-0">
-                            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
+                        <div className="mb-6 md:mb-8 lg:mb-12 py-4 md:py-6 lg:py-8 text-center shrink-0">
+                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 md:mb-6 px-4">
                                 Our Services
                             </h1>
-                            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
+                            <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
                                 Comprehensive digital solutions tailored to your
                                 business needs. From concept to deployment,
                                 we've got you covered.
@@ -25,12 +25,12 @@ export default function ServicesPage() {
                         </div>
 
                         {/* Two Column Layout */}
-                        <div className="grid lg:grid-cols-2 gap-12 flex-1 min-h-0">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 flex-1 overflow-y-auto lg:overflow-hidden px-4">
                             {/* Left Column */}
-                            <div className="space-y-8 overflow-hidden">
+                            <div className="space-y-6 md:space-y-8">
                                 {/* Web Development */}
-                                <section className="space-y-4 p-6 rounded-xl bg-card border border-border">
-                                    <h2 className="text-3xl font-bold">
+                                <section className="space-y-3 md:space-y-4 p-4 md:p-6 rounded-xl bg-card border border-border">
+                                    <h2 className="text-2xl md:text-3xl font-bold">
                                         Web Development
                                     </h2>
                                     <p className="text-base text-muted-foreground leading-relaxed">
@@ -68,8 +68,8 @@ export default function ServicesPage() {
                                 </section>
 
                                 {/* UI/UX Design */}
-                                <section className="space-y-4 p-6 rounded-xl bg-card border border-border">
-                                    <h2 className="text-3xl font-bold">
+                                <section className="space-y-3 md:space-y-4 p-4 md:p-6 rounded-xl bg-card border border-border">
+                                    <h2 className="text-2xl md:text-3xl font-bold">
                                         UI/UX Design
                                     </h2>
                                     <p className="text-base text-muted-foreground leading-relaxed">
@@ -107,10 +107,10 @@ export default function ServicesPage() {
                             </div>
 
                             {/* Right Column */}
-                            <div className="space-y-8 overflow-hidden">
+                            <div className="space-y-6 md:space-y-8">
                                 {/* Cloud Solutions */}
-                                <section className="space-y-4 p-6 rounded-xl bg-muted/30 border border-border">
-                                    <h2 className="text-3xl font-bold">
+                                <section className="space-y-3 md:space-y-4 p-4 md:p-6 rounded-xl bg-muted/30 border border-border">
+                                    <h2 className="text-2xl md:text-3xl font-bold">
                                         Cloud Solutions
                                     </h2>
                                     <p className="text-base text-muted-foreground leading-relaxed">
@@ -148,8 +148,8 @@ export default function ServicesPage() {
                                 </section>
 
                                 {/* Consulting */}
-                                <section className="space-y-4 p-6 rounded-xl bg-card border border-border">
-                                    <h2 className="text-3xl font-bold">
+                                <section className="space-y-3 md:space-y-4 p-4 md:p-6 rounded-xl bg-card border border-border">
+                                    <h2 className="text-2xl md:text-3xl font-bold">
                                         Technical Consulting
                                     </h2>
                                     <p className="text-base text-muted-foreground leading-relaxed">
@@ -186,8 +186,8 @@ export default function ServicesPage() {
                                 </section>
 
                                 {/* Maintenance & Support */}
-                                {/*<section className="space-y-4 p-6 rounded-xl bg-muted/30 border border-border">
-                                    <h2 className="text-3xl font-bold">
+                                {/*<section className="space-y-3 md:space-y-4 p-4 md:p-6 rounded-xl bg-muted/30 border border-border">
+                                    <h2 className="text-2xl md:text-3xl font-bold">
                                         Maintenance & Support
                                     </h2>
                                     <p className="text-base text-muted-foreground leading-relaxed">

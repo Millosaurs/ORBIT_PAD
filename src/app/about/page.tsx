@@ -7,29 +7,29 @@ export default function AboutPage() {
     return (
         <>
             {/* Main Content - Full Screen */}
-            <div className="h-screen flex flex-col overflow-hidden">
+            <div className=" flex flex-col overflow-hidden">
                 <Navbar />
 
                 <main className="flex-1 px-6 md:px-12 py-12 overflow-hidden bg-background">
                     <div className="max-w-[1800px] mx-auto h-full flex flex-col">
                         {/* Header */}
-                        <div className="mb-12 py-8 text-center shrink-0">
-                            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
+                        <div className="mb-6 md:mb-8 lg:mb-12 py-4 md:py-6 lg:py-8 text-center shrink-0">
+                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 md:mb-6 px-4">
                                 About Orbits LLC
                             </h1>
-                            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
+                            <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
                                 Building exceptional digital experiences through
                                 innovation, collaboration, and expertise.
                             </p>
                         </div>
 
                         {/* Two Column Layout */}
-                        <div className="grid lg:grid-cols-2 gap-12 flex-1 min-h-0">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 flex-1 overflow-y-auto lg:overflow-hidden px-4">
                             {/* Left Column */}
-                            <div className="space-y-8 overflow-hidden">
+                            <div className="space-y-6 md:space-y-8">
                                 {/* Mission */}
-                                <section className="space-y-4 p-6 rounded-xl bg-muted/30 border border-border">
-                                    <h2 className="text-3xl font-bold">
+                                <section className="space-y-3 md:space-y-4 p-4 md:p-6 rounded-xl bg-muted/30 border border-border">
+                                    <h2 className="text-2xl md:text-3xl font-bold">
                                         Our Mission
                                     </h2>
                                     <p className="text-base text-muted-foreground leading-relaxed">
@@ -43,8 +43,8 @@ export default function AboutPage() {
                                 </section>
 
                                 {/* Story */}
-                                <section className="space-y-4 p-6 rounded-xl bg-card border border-border">
-                                    <h2 className="text-3xl font-bold">
+                                <section className="space-y-3 md:space-y-4 p-4 md:p-6 rounded-xl bg-card border border-border">
+                                    <h2 className="text-2xl md:text-3xl font-bold">
                                         Our Story
                                     </h2>
                                     <div className="space-y-3 text-base text-muted-foreground leading-relaxed">
@@ -73,13 +73,13 @@ export default function AboutPage() {
                                 </section>
 
                                 {/* Expertise */}
-                                <section className="space-y-4">
-                                    <h2 className="text-3xl font-bold">
+                                <section className="space-y-3 md:space-y-4">
+                                    <h2 className="text-2xl md:text-3xl font-bold">
                                         Our Expertise
                                     </h2>
-                                    <div className="grid grid-cols-2 gap-4">
-                                        <div className="p-5 rounded-xl bg-card border border-border hover:border-lime-400/50 transition-colors">
-                                            <h3 className="font-bold text-lg mb-2">
+                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
+                                        <div className="p-4 md:p-5 rounded-xl bg-card border border-border hover:border-lime-400/50 transition-colors">
+                                            <h3 className="font-bold text-base md:text-lg mb-2">
                                                 Web Development
                                             </h3>
                                             <p className="text-sm text-muted-foreground">
@@ -87,24 +87,24 @@ export default function AboutPage() {
                                                 applications
                                             </p>
                                         </div>
-                                        <div className="p-5 rounded-xl bg-card border border-border hover:border-lime-400/50 transition-colors">
-                                            <h3 className="font-bold text-lg mb-2">
+                                        <div className="p-4 md:p-5 rounded-xl bg-card border border-border hover:border-lime-400/50 transition-colors">
+                                            <h3 className="font-bold text-base md:text-lg mb-2">
                                                 UI/UX Design
                                             </h3>
                                             <p className="text-sm text-muted-foreground">
                                                 Beautiful, intuitive interfaces
                                             </p>
                                         </div>
-                                        <div className="p-5 rounded-xl bg-card border border-border hover:border-lime-400/50 transition-colors">
-                                            <h3 className="font-bold text-lg mb-2">
+                                        <div className="p-4 md:p-5 rounded-xl bg-card border border-border hover:border-lime-400/50 transition-colors">
+                                            <h3 className="font-bold text-base md:text-lg mb-2">
                                                 Cloud Solutions
                                             </h3>
                                             <p className="text-sm text-muted-foreground">
                                                 Scalable infrastructure
                                             </p>
                                         </div>
-                                        <div className="p-5 rounded-xl bg-card border border-border hover:border-lime-400/50 transition-colors">
-                                            <h3 className="font-bold text-lg mb-2">
+                                        <div className="p-4 md:p-5 rounded-xl bg-card border border-border hover:border-lime-400/50 transition-colors">
+                                            <h3 className="font-bold text-base md:text-lg mb-2">
                                                 Technical Consulting
                                             </h3>
                                             <p className="text-sm text-muted-foreground">
@@ -116,16 +116,16 @@ export default function AboutPage() {
                             </div>
 
                             {/* Right Column */}
-                            <div className="space-y-8 overflow-hidden">
+                            <div className="space-y-6 md:space-y-8">
                                 {/* Values */}
-                                <section className="space-y-4">
-                                    <h2 className="text-3xl font-bold">
+                                <section className="space-y-3 md:space-y-4">
+                                    <h2 className="text-2xl md:text-3xl font-bold">
                                         Our Values
                                     </h2>
-                                    <div className="grid grid-cols-2 gap-5">
+                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5">
                                         {/* Value 1 */}
-                                        <div className="p-5 rounded-xl bg-card border border-border hover:border-lime-400/50 transition-colors">
-                                            <h3 className="text-xl font-bold mb-2">
+                                        <div className="p-4 md:p-5 rounded-xl bg-card border border-border hover:border-lime-400/50 transition-colors">
+                                            <h3 className="text-lg md:text-xl font-bold mb-2">
                                                 Innovation
                                             </h3>
                                             <p className="text-sm text-muted-foreground">
@@ -136,8 +136,8 @@ export default function AboutPage() {
                                         </div>
 
                                         {/* Value 2 */}
-                                        <div className="p-5 rounded-xl bg-card border border-border hover:border-lime-400/50 transition-colors">
-                                            <h3 className="text-xl font-bold mb-2">
+                                        <div className="p-4 md:p-5 rounded-xl bg-card border border-border hover:border-lime-400/50 transition-colors">
+                                            <h3 className="text-lg md:text-xl font-bold mb-2">
                                                 Collaboration
                                             </h3>
                                             <p className="text-sm text-muted-foreground">
@@ -148,8 +148,8 @@ export default function AboutPage() {
                                         </div>
 
                                         {/* Value 3 */}
-                                        <div className="p-5 rounded-xl bg-card border border-border hover:border-lime-400/50 transition-colors">
-                                            <h3 className="text-xl font-bold mb-2">
+                                        <div className="p-4 md:p-5 rounded-xl bg-card border border-border hover:border-lime-400/50 transition-colors">
+                                            <h3 className="text-lg md:text-xl font-bold mb-2">
                                                 Excellence
                                             </h3>
                                             <p className="text-sm text-muted-foreground">
@@ -160,8 +160,8 @@ export default function AboutPage() {
                                         </div>
 
                                         {/* Value 4 */}
-                                        <div className="p-5 rounded-xl bg-card border border-border hover:border-lime-400/50 transition-colors">
-                                            <h3 className="text-xl font-bold mb-2">
+                                        <div className="p-4 md:p-5 rounded-xl bg-card border border-border hover:border-lime-400/50 transition-colors">
+                                            <h3 className="text-lg md:text-xl font-bold mb-2">
                                                 Growth
                                             </h3>
                                             <p className="text-sm text-muted-foreground">
@@ -174,8 +174,8 @@ export default function AboutPage() {
                                 </section>
 
                                 {/* Approach */}
-                                <section className="space-y-4 p-6 rounded-xl bg-muted/30 border border-border">
-                                    <h2 className="text-3xl font-bold">
+                                <section className="space-y-3 md:space-y-4 p-4 md:p-6 rounded-xl bg-muted/30 border border-border">
+                                    <h2 className="text-2xl md:text-3xl font-bold">
                                         Our Approach
                                     </h2>
                                     <div className="space-y-3 text-base text-muted-foreground leading-relaxed">
@@ -197,32 +197,32 @@ export default function AboutPage() {
                                 </section>
 
                                 {/* Stats */}
-                                <section className="space-y-4">
-                                    <h2 className="text-3xl font-bold">
+                                <section className="space-y-3 md:space-y-4">
+                                    <h2 className="text-2xl md:text-3xl font-bold">
                                         By The Numbers
                                     </h2>
-                                    <div className="grid grid-cols-3 gap-4">
-                                        <div className="text-center p-6 bg-card border border-border rounded-xl hover:border-lime-400/50 transition-colors">
-                                            <div className="text-4xl font-bold text-lime-400 dark:text-lime-500 mb-2">
+                                    <div className="grid grid-cols-3 gap-3 md:gap-4">
+                                        <div className="text-center p-3 md:p-4 lg:p-6 bg-card border border-border rounded-xl hover:border-lime-400/50 transition-colors">
+                                            <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-lime-400 dark:text-lime-500 mb-1 md:mb-2">
                                                 50+
                                             </div>
-                                            <div className="text-sm text-muted-foreground font-medium">
+                                            <div className="text-xs md:text-sm text-muted-foreground font-medium">
                                                 Projects
                                             </div>
                                         </div>
-                                        <div className="text-center p-6 bg-card border border-border rounded-xl hover:border-lime-400/50 transition-colors">
-                                            <div className="text-4xl font-bold text-lime-400 dark:text-lime-500 mb-2">
+                                        <div className="text-center p-3 md:p-4 lg:p-6 bg-card border border-border rounded-xl hover:border-lime-400/50 transition-colors">
+                                            <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-lime-400 dark:text-lime-500 mb-1 md:mb-2">
                                                 30+
                                             </div>
-                                            <div className="text-sm text-muted-foreground font-medium">
+                                            <div className="text-xs md:text-sm text-muted-foreground font-medium">
                                                 Clients
                                             </div>
                                         </div>
-                                        <div className="text-center p-6 bg-card border border-border rounded-xl hover:border-lime-400/50 transition-colors">
-                                            <div className="text-4xl font-bold text-lime-400 dark:text-lime-500 mb-2">
+                                        <div className="text-center p-3 md:p-4 lg:p-6 bg-card border border-border rounded-xl hover:border-lime-400/50 transition-colors">
+                                            <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-lime-400 dark:text-lime-500 mb-1 md:mb-2">
                                                 100%
                                             </div>
-                                            <div className="text-sm text-muted-foreground font-medium">
+                                            <div className="text-xs md:text-sm text-muted-foreground font-medium">
                                                 Satisfaction
                                             </div>
                                         </div>

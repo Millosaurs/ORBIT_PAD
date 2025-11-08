@@ -8,19 +8,19 @@ export default function PrivacyPage() {
         <div className="min-h-screen flex flex-col">
             <Navbar />
 
-            <main className="flex-1 px-6 md:px-12 py-16 bg-background">
+            <main className="flex-1 px-4 sm:px-6 md:px-8 lg:px-12 py-8 sm:py-12 md:py-16 bg-background">
                 <div className="max-w-4xl mx-auto">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-6">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
                         Privacy Policy
                     </h1>
-                    <p className="text-muted-foreground mb-8">
+                    <p className="text-sm sm:text-base text-muted-foreground mb-6 sm:mb-8">
                         Last updated: {new Date().toLocaleDateString()}
                     </p>
 
-                    <div className="space-y-8 text-muted-foreground">
+                    <div className="space-y-6 sm:space-y-8 text-sm sm:text-base text-muted-foreground">
                         {/* Introduction */}
-                        <section className="space-y-4">
-                            <h2 className="text-2xl font-bold text-foreground">
+                        <section className="space-y-3 sm:space-y-4">
+                            <h2 className="text-xl sm:text-2xl font-bold text-foreground">
                                 1. Introduction
                             </h2>
                             <p className="leading-relaxed">
@@ -29,8 +29,8 @@ export default function PrivacyPage() {
                                 ensuring the security of your personal
                                 information. This Privacy Policy explains how we
                                 collect, use, disclose, and safeguard your
-                                information when you visit our website or use our
-                                services.
+                                information when you visit our website or use
+                                our services.
                             </p>
                             <p className="leading-relaxed">
                                 By using our services, you agree to the
@@ -42,11 +42,11 @@ export default function PrivacyPage() {
                         </section>
 
                         {/* Information We Collect */}
-                        <section className="space-y-4">
-                            <h2 className="text-2xl font-bold text-foreground">
+                        <section className="space-y-3 sm:space-y-4">
+                            <h2 className="text-xl sm:text-2xl font-bold text-foreground">
                                 2. Information We Collect
                             </h2>
-                            <h3 className="text-xl font-semibold text-foreground">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground">
                                 2.1 Personal Information
                             </h3>
                             <p className="leading-relaxed">
@@ -54,7 +54,9 @@ export default function PrivacyPage() {
                                 voluntarily provide to us when you:
                             </p>
                             <ul className="list-disc list-inside space-y-2 ml-4">
-                                <li>Contact us through our website or Discord</li>
+                                <li>
+                                    Contact us through our website or Discord
+                                </li>
                                 <li>Request a quote or consultation</li>
                                 <li>Enter into a service agreement with us</li>
                                 <li>Subscribe to our newsletter or updates</li>
@@ -73,7 +75,7 @@ export default function PrivacyPage() {
                                 <li>Project requirements and specifications</li>
                             </ul>
 
-                            <h3 className="text-xl font-semibold text-foreground mt-6">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground mt-6">
                                 2.2 Automatically Collected Information
                             </h3>
                             <p className="leading-relaxed">
@@ -87,10 +89,12 @@ export default function PrivacyPage() {
                                 <li>Operating system</li>
                                 <li>Referring URLs</li>
                                 <li>Pages viewed and time spent on pages</li>
-                                <li>Cookies and similar tracking technologies</li>
+                                <li>
+                                    Cookies and similar tracking technologies
+                                </li>
                             </ul>
 
-                            <h3 className="text-xl font-semibold text-foreground mt-6">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground mt-6">
                                 2.3 Communication Records
                             </h3>
                             <p className="leading-relaxed">
@@ -109,8 +113,8 @@ export default function PrivacyPage() {
                         </section>
 
                         {/* How We Use Your Information */}
-                        <section className="space-y-4">
-                            <h2 className="text-2xl font-bold text-foreground">
+                        <section className="space-y-3 sm:space-y-4">
+                            <h2 className="text-xl sm:text-2xl font-bold text-foreground">
                                 3. How We Use Your Information
                             </h2>
                             <p className="leading-relaxed">
@@ -119,7 +123,8 @@ export default function PrivacyPage() {
                             </p>
                             <ul className="list-disc list-inside space-y-2 ml-4">
                                 <li>
-                                    To provide, operate, and maintain our services
+                                    To provide, operate, and maintain our
+                                    services
                                 </li>
                                 <li>
                                     To communicate with you about your projects
@@ -152,8 +157,8 @@ export default function PrivacyPage() {
                         </section>
 
                         {/* Information Sharing */}
-                        <section className="space-y-4">
-                            <h2 className="text-2xl font-bold text-foreground">
+                        <section className="space-y-3 sm:space-y-4">
+                            <h2 className="text-xl sm:text-2xl font-bold text-foreground">
                                 4. Information Sharing and Disclosure
                             </h2>
                             <p className="leading-relaxed">
@@ -166,13 +171,13 @@ export default function PrivacyPage() {
                                     <strong>Service Providers:</strong> We may
                                     share information with third-party service
                                     providers who perform services on our behalf
-                                    (e.g., payment processors, hosting providers,
-                                    Discord platform)
+                                    (e.g., payment processors, hosting
+                                    providers, Discord platform)
                                 </li>
                                 <li>
                                     <strong>Legal Requirements:</strong> We may
-                                    disclose information if required by law or in
-                                    response to valid requests by public
+                                    disclose information if required by law or
+                                    in response to valid requests by public
                                     authorities
                                 </li>
                                 <li>
@@ -188,22 +193,24 @@ export default function PrivacyPage() {
                         </section>
 
                         {/* Discord Communications */}
-                        <section className="space-y-4">
-                            <h2 className="text-2xl font-bold text-foreground">
+                        <section className="space-y-3 sm:space-y-4">
+                            <h2 className="text-xl sm:text-2xl font-bold text-foreground">
                                 5. Discord Communications
                             </h2>
                             <p className="leading-relaxed">
-                                All official project communications are conducted
-                                through Discord. By engaging our services, you
-                                acknowledge and agree that:
+                                All official project communications are
+                                conducted through Discord. By engaging our
+                                services, you acknowledge and agree that:
                             </p>
                             <ul className="list-disc list-inside space-y-2 ml-4">
                                 <li>
-                                    Discord is our primary communication platform
+                                    Discord is our primary communication
+                                    platform
                                 </li>
                                 <li>
-                                    All conversations, files, and messages shared
-                                    through Discord are logged and archived
+                                    All conversations, files, and messages
+                                    shared through Discord are logged and
+                                    archived
                                 </li>
                                 <li>
                                     You must maintain an active Discord account
@@ -221,8 +228,8 @@ export default function PrivacyPage() {
                         </section>
 
                         {/* Data Security */}
-                        <section className="space-y-4">
-                            <h2 className="text-2xl font-bold text-foreground">
+                        <section className="space-y-3 sm:space-y-4">
+                            <h2 className="text-xl sm:text-2xl font-bold text-foreground">
                                 6. Data Security
                             </h2>
                             <p className="leading-relaxed">
@@ -240,28 +247,28 @@ export default function PrivacyPage() {
                             </ul>
                             <p className="leading-relaxed mt-4">
                                 However, no method of transmission over the
-                                Internet or electronic storage is 100% secure. We
-                                cannot guarantee absolute security of your
+                                Internet or electronic storage is 100% secure.
+                                We cannot guarantee absolute security of your
                                 information.
                             </p>
                         </section>
 
                         {/* Data Retention */}
-                        <section className="space-y-4">
-                            <h2 className="text-2xl font-bold text-foreground">
+                        <section className="space-y-3 sm:space-y-4">
+                            <h2 className="text-xl sm:text-2xl font-bold text-foreground">
                                 7. Data Retention
                             </h2>
                             <p className="leading-relaxed">
-                                We retain your personal information for as long as
-                                necessary to fulfill the purposes outlined in this
-                                Privacy Policy, unless a longer retention period
-                                is required by law. Specifically:
+                                We retain your personal information for as long
+                                as necessary to fulfill the purposes outlined in
+                                this Privacy Policy, unless a longer retention
+                                period is required by law. Specifically:
                             </p>
                             <ul className="list-disc list-inside space-y-2 ml-4">
                                 <li>
-                                    Project communications and specifications are
-                                    retained indefinitely for legal and dispute
-                                    resolution purposes
+                                    Project communications and specifications
+                                    are retained indefinitely for legal and
+                                    dispute resolution purposes
                                 </li>
                                 <li>
                                     Payment records are retained in accordance
@@ -269,15 +276,15 @@ export default function PrivacyPage() {
                                 </li>
                                 <li>
                                     Client information is retained for the
-                                    duration of the business relationship and for
-                                    a reasonable period thereafter
+                                    duration of the business relationship and
+                                    for a reasonable period thereafter
                                 </li>
                             </ul>
                         </section>
 
                         {/* Your Rights */}
-                        <section className="space-y-4">
-                            <h2 className="text-2xl font-bold text-foreground">
+                        <section className="space-y-3 sm:space-y-4">
+                            <h2 className="text-xl sm:text-2xl font-bold text-foreground">
                                 8. Your Rights
                             </h2>
                             <p className="leading-relaxed">
@@ -294,45 +301,46 @@ export default function PrivacyPage() {
                                     correction of inaccurate information
                                 </li>
                                 <li>
-                                    <strong>Deletion:</strong> Request deletion of
-                                    your information (subject to legal retention
-                                    requirements)
+                                    <strong>Deletion:</strong> Request deletion
+                                    of your information (subject to legal
+                                    retention requirements)
                                 </li>
                                 <li>
                                     <strong>Objection:</strong> Object to
                                     processing of your information
                                 </li>
                                 <li>
-                                    <strong>Portability:</strong> Request transfer
-                                    of your information to another service
+                                    <strong>Portability:</strong> Request
+                                    transfer of your information to another
+                                    service
                                 </li>
                             </ul>
                             <p className="leading-relaxed mt-4">
-                                To exercise these rights, please contact us using
-                                the information provided in the Contact section
-                                below.
+                                To exercise these rights, please contact us
+                                using the information provided in the Contact
+                                section below.
                             </p>
                         </section>
 
                         {/* Cookies */}
-                        <section className="space-y-4">
-                            <h2 className="text-2xl font-bold text-foreground">
+                        <section className="space-y-3 sm:space-y-4">
+                            <h2 className="text-xl sm:text-2xl font-bold text-foreground">
                                 9. Cookies and Tracking Technologies
                             </h2>
                             <p className="leading-relaxed">
                                 We use cookies and similar tracking technologies
-                                to track activity on our website and store certain
-                                information. You can instruct your browser to
-                                refuse all cookies or to indicate when a cookie is
-                                being sent. However, if you do not accept cookies,
-                                you may not be able to use some portions of our
-                                website.
+                                to track activity on our website and store
+                                certain information. You can instruct your
+                                browser to refuse all cookies or to indicate
+                                when a cookie is being sent. However, if you do
+                                not accept cookies, you may not be able to use
+                                some portions of our website.
                             </p>
                         </section>
 
                         {/* Third-Party Links */}
-                        <section className="space-y-4">
-                            <h2 className="text-2xl font-bold text-foreground">
+                        <section className="space-y-3 sm:space-y-4">
+                            <h2 className="text-xl sm:text-2xl font-bold text-foreground">
                                 10. Third-Party Links
                             </h2>
                             <p className="leading-relaxed">
@@ -345,52 +353,53 @@ export default function PrivacyPage() {
                         </section>
 
                         {/* Children's Privacy */}
-                        <section className="space-y-4">
-                            <h2 className="text-2xl font-bold text-foreground">
+                        <section className="space-y-3 sm:space-y-4">
+                            <h2 className="text-xl sm:text-2xl font-bold text-foreground">
                                 11. Children's Privacy
                             </h2>
                             <p className="leading-relaxed">
                                 Our services are not intended for individuals
                                 under the age of 18. We do not knowingly collect
-                                personal information from children. If you believe
-                                we have collected information from a child, please
-                                contact us immediately.
+                                personal information from children. If you
+                                believe we have collected information from a
+                                child, please contact us immediately.
                             </p>
                         </section>
 
                         {/* International Transfers */}
-                        <section className="space-y-4">
-                            <h2 className="text-2xl font-bold text-foreground">
+                        <section className="space-y-3 sm:space-y-4">
+                            <h2 className="text-xl sm:text-2xl font-bold text-foreground">
                                 12. International Data Transfers
                             </h2>
                             <p className="leading-relaxed">
                                 Your information may be transferred to and
                                 maintained on computers located outside of your
                                 state, province, country, or other governmental
-                                jurisdiction where data protection laws may differ
-                                from those in your jurisdiction. By using our
-                                services, you consent to such transfers.
+                                jurisdiction where data protection laws may
+                                differ from those in your jurisdiction. By using
+                                our services, you consent to such transfers.
                             </p>
                         </section>
 
                         {/* Changes to Policy */}
-                        <section className="space-y-4">
-                            <h2 className="text-2xl font-bold text-foreground">
+                        <section className="space-y-3 sm:space-y-4">
+                            <h2 className="text-xl sm:text-2xl font-bold text-foreground">
                                 13. Changes to This Privacy Policy
                             </h2>
                             <p className="leading-relaxed">
                                 We may update our Privacy Policy from time to
-                                time. We will notify you of any changes by posting
-                                the new Privacy Policy on this page and updating
-                                the "Last updated" date. You are advised to review
-                                this Privacy Policy periodically for any changes.
-                                Changes are effective when posted on this page.
+                                time. We will notify you of any changes by
+                                posting the new Privacy Policy on this page and
+                                updating the "Last updated" date. You are
+                                advised to review this Privacy Policy
+                                periodically for any changes. Changes are
+                                effective when posted on this page.
                             </p>
                         </section>
 
                         {/* Contact */}
-                        <section className="space-y-4">
-                            <h2 className="text-2xl font-bold text-foreground">
+                        <section className="space-y-3 sm:space-y-4">
+                            <h2 className="text-xl sm:text-2xl font-bold text-foreground">
                                 14. Contact Us
                             </h2>
                             <p className="leading-relaxed">
@@ -405,8 +414,8 @@ export default function PrivacyPage() {
                                     <strong>Email:</strong> hello@orbitsllc.com
                                 </p>
                                 <p>
-                                    <strong>Discord:</strong> Join our server for
-                                    support
+                                    <strong>Discord:</strong> Join our server
+                                    for support
                                 </p>
                             </div>
                         </section>

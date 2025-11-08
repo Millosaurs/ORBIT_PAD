@@ -8,19 +8,19 @@ export default function TermsPage() {
         <div className="min-h-screen flex flex-col">
             <Navbar />
 
-            <main className="flex-1 px-6 md:px-12 py-16 bg-background">
+            <main className="flex-1 px-4 sm:px-6 md:px-8 lg:px-12 py-8 sm:py-12 md:py-16 bg-background">
                 <div className="max-w-4xl mx-auto">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-6">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
                         Terms of Service
                     </h1>
-                    <p className="text-muted-foreground mb-8">
+                    <p className="text-sm sm:text-base text-muted-foreground mb-6 sm:mb-8">
                         Last updated: {new Date().toLocaleDateString()}
                     </p>
 
-                    <div className="space-y-8 text-muted-foreground">
+                    <div className="space-y-6 sm:space-y-8 text-sm sm:text-base text-muted-foreground">
                         {/* Introduction */}
-                        <section className="space-y-4">
-                            <h2 className="text-2xl font-bold text-foreground">
+                        <section className="space-y-3 sm:space-y-4">
+                            <h2 className="text-xl sm:text-2xl font-bold text-foreground">
                                 1. Agreement to Terms
                             </h2>
                             <p className="leading-relaxed">
@@ -40,8 +40,8 @@ export default function TermsPage() {
                         </section>
 
                         {/* Services */}
-                        <section className="space-y-4">
-                            <h2 className="text-2xl font-bold text-foreground">
+                        <section className="space-y-3 sm:space-y-4">
+                            <h2 className="text-xl sm:text-2xl font-bold text-foreground">
                                 2. Services Provided
                             </h2>
                             <p className="leading-relaxed">
@@ -64,11 +64,11 @@ export default function TermsPage() {
                         </section>
 
                         {/* Project Scope and Requirements */}
-                        <section className="space-y-4">
-                            <h2 className="text-2xl font-bold text-foreground">
+                        <section className="space-y-3 sm:space-y-4">
+                            <h2 className="text-xl sm:text-2xl font-bold text-foreground">
                                 3. Project Scope and Requirements
                             </h2>
-                            <h3 className="text-xl font-semibold text-foreground">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground">
                                 3.1 Initial Quote and Scope Definition
                             </h3>
                             <p className="leading-relaxed">
@@ -87,7 +87,7 @@ export default function TermsPage() {
                                 result in additional charges or project delays.
                             </p>
 
-                            <h3 className="text-xl font-semibold text-foreground mt-6">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground mt-6">
                                 3.2 Scope Changes and Additional Features
                             </h3>
                             <p className="leading-relaxed">
@@ -98,15 +98,27 @@ export default function TermsPage() {
                                 limited to:
                             </p>
                             <ul className="list-disc list-inside space-y-2 ml-4">
-                                <li>New pages or screens not originally specified</li>
-                                <li>Additional integrations or third-party services</li>
-                                <li>Changes to core functionality or architecture</li>
+                                <li>
+                                    New pages or screens not originally
+                                    specified
+                                </li>
+                                <li>
+                                    Additional integrations or third-party
+                                    services
+                                </li>
+                                <li>
+                                    Changes to core functionality or
+                                    architecture
+                                </li>
                                 <li>New features or modules</li>
-                                <li>Significant design revisions beyond agreed rounds</li>
+                                <li>
+                                    Significant design revisions beyond agreed
+                                    rounds
+                                </li>
                                 <li>Additional platforms or devices</li>
                             </ul>
 
-                            <h3 className="text-xl font-semibold text-foreground mt-6">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground mt-6">
                                 3.3 Change Request Process
                             </h3>
                             <p className="leading-relaxed">
@@ -119,11 +131,11 @@ export default function TermsPage() {
                         </section>
 
                         {/* Payment Terms */}
-                        <section className="space-y-4">
-                            <h2 className="text-2xl font-bold text-foreground">
+                        <section className="space-y-3 sm:space-y-4">
+                            <h2 className="text-xl sm:text-2xl font-bold text-foreground">
                                 4. Payment Terms
                             </h2>
-                            <h3 className="text-xl font-semibold text-foreground">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground">
                                 4.1 Payment Structure
                             </h3>
                             <p className="leading-relaxed">
@@ -134,9 +146,9 @@ export default function TermsPage() {
                                 <li>
                                     <strong>First Payment (50%):</strong> Due
                                     upon project acceptance and before work
-                                    begins. This payment confirms your commitment
-                                    to the project and secures your project slot
-                                    in our schedule.
+                                    begins. This payment confirms your
+                                    commitment to the project and secures your
+                                    project slot in our schedule.
                                 </li>
                                 <li>
                                     <strong>Second Payment (50%):</strong> Due
@@ -145,7 +157,7 @@ export default function TermsPage() {
                                 </li>
                             </ul>
 
-                            <h3 className="text-xl font-semibold text-foreground mt-6">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground mt-6">
                                 4.2 Non-Refundable Policy
                             </h3>
                             <p className="leading-relaxed font-bold text-foreground">
@@ -158,27 +170,29 @@ export default function TermsPage() {
                             </p>
                             <ul className="list-disc list-inside space-y-2 ml-4">
                                 <li>
-                                    The first 50% payment is non-refundable under
-                                    any circumstances once work has commenced
+                                    The first 50% payment is non-refundable
+                                    under any circumstances once work has
+                                    commenced
                                 </li>
                                 <li>
-                                    The second 50% payment is non-refundable once
-                                    the project is completed and ready for delivery
+                                    The second 50% payment is non-refundable
+                                    once the project is completed and ready for
+                                    delivery
                                 </li>
                                 <li>
                                     Partial refunds will not be issued for any
                                     reason, including but not limited to: client
-                                    cancellation, change of mind, business closure,
-                                    or dissatisfaction
+                                    cancellation, change of mind, business
+                                    closure, or dissatisfaction
                                 </li>
                                 <li>
                                     Failure to provide required materials or
-                                    respond to communications does not entitle you
-                                    to a refund
+                                    respond to communications does not entitle
+                                    you to a refund
                                 </li>
                             </ul>
 
-                            <h3 className="text-xl font-semibold text-foreground mt-6">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground mt-6">
                                 4.3 Payment Methods
                             </h3>
                             <p className="leading-relaxed">
@@ -188,7 +202,7 @@ export default function TermsPage() {
                                 agreed in writing.
                             </p>
 
-                            <h3 className="text-xl font-semibold text-foreground mt-6">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground mt-6">
                                 4.4 Late Payments
                             </h3>
                             <p className="leading-relaxed">
@@ -200,13 +214,13 @@ export default function TermsPage() {
                                 <li>Withhold final project deliverables</li>
                                 <li>Suspend access to any hosted services</li>
                                 <li>
-                                    Charge late payment fees of 5% per week or the
-                                    maximum allowed by law
+                                    Charge late payment fees of 5% per week or
+                                    the maximum allowed by law
                                 </li>
                                 <li>Pursue legal action to recover payment</li>
                             </ul>
 
-                            <h3 className="text-xl font-semibold text-foreground mt-6">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground mt-6">
                                 4.5 Additional Feature Payments
                             </h3>
                             <p className="leading-relaxed">
@@ -218,11 +232,11 @@ export default function TermsPage() {
                         </section>
 
                         {/* Communication Policy */}
-                        <section className="space-y-4">
-                            <h2 className="text-2xl font-bold text-foreground">
+                        <section className="space-y-3 sm:space-y-4">
+                            <h2 className="text-xl sm:text-2xl font-bold text-foreground">
                                 5. Communication Policy
                             </h2>
-                            <h3 className="text-xl font-semibold text-foreground">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground">
                                 5.1 Official Communication Channel
                             </h3>
                             <p className="leading-relaxed font-bold text-foreground">
@@ -242,7 +256,7 @@ export default function TermsPage() {
                                 <li>Support requests</li>
                             </ul>
 
-                            <h3 className="text-xl font-semibold text-foreground mt-6">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground mt-6">
                                 5.2 Communication Logging
                             </h3>
                             <p className="leading-relaxed">
@@ -262,7 +276,7 @@ export default function TermsPage() {
                                 evidence in any disputes.
                             </p>
 
-                            <h3 className="text-xl font-semibold text-foreground mt-6">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground mt-6">
                                 5.3 Client Responsibilities
                             </h3>
                             <p className="leading-relaxed">
@@ -287,7 +301,7 @@ export default function TermsPage() {
                                 </li>
                             </ul>
 
-                            <h3 className="text-xl font-semibold text-foreground mt-6">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground mt-6">
                                 5.4 Response Times
                             </h3>
                             <p className="leading-relaxed">
@@ -297,25 +311,24 @@ export default function TermsPage() {
                                 prioritized accordingly.
                             </p>
 
-                            <h3 className="text-xl font-semibold text-foreground mt-6">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground mt-6">
                                 5.5 External Communication Not Binding
                             </h3>
                             <p className="leading-relaxed">
                                 Any communications conducted outside of Discord
-                                (email, phone, text, social media, etc.) are
-                                not considered official and are not binding.
-                                Only communications made through our Discord
-                                server are legally recognized for project
-                                purposes.
+                                (email, phone, text, social media, etc.) are not
+                                considered official and are not binding. Only
+                                communications made through our Discord server
+                                are legally recognized for project purposes.
                             </p>
                         </section>
 
                         {/* Project Timeline */}
-                        <section className="space-y-4">
-                            <h2 className="text-2xl font-bold text-foreground">
+                        <section className="space-y-3 sm:space-y-4">
+                            <h2 className="text-xl sm:text-2xl font-bold text-foreground">
                                 6. Project Timeline and Delivery
                             </h2>
-                            <h3 className="text-xl font-semibold text-foreground">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground">
                                 6.1 Estimated Timelines
                             </h3>
                             <p className="leading-relaxed">
@@ -326,7 +339,7 @@ export default function TermsPage() {
                                 through Discord.
                             </p>
 
-                            <h3 className="text-xl font-semibold text-foreground mt-6">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground mt-6">
                                 6.2 Delays Due to Client
                             </h3>
                             <p className="leading-relaxed">
@@ -338,7 +351,7 @@ export default function TermsPage() {
                                 compensation.
                             </p>
 
-                            <h3 className="text-xl font-semibold text-foreground mt-6">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground mt-6">
                                 6.3 Project Delivery
                             </h3>
                             <p className="leading-relaxed">
@@ -351,21 +364,22 @@ export default function TermsPage() {
                         </section>
 
                         {/* Revisions and Feedback */}
-                        <section className="space-y-4">
-                            <h2 className="text-2xl font-bold text-foreground">
+                        <section className="space-y-3 sm:space-y-4">
+                            <h2 className="text-xl sm:text-2xl font-bold text-foreground">
                                 7. Revisions and Feedback
                             </h2>
-                            <h3 className="text-xl font-semibold text-foreground">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground">
                                 7.1 Included Revisions
                             </h3>
                             <p className="leading-relaxed">
                                 The number of included revisions is specified in
                                 your project plan. Revisions must be within the
                                 original scope of work and cannot introduce new
-                                features or significant changes to functionality.
+                                features or significant changes to
+                                functionality.
                             </p>
 
-                            <h3 className="text-xl font-semibold text-foreground mt-6">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground mt-6">
                                 7.2 Additional Revisions
                             </h3>
                             <p className="leading-relaxed">
@@ -375,7 +389,7 @@ export default function TermsPage() {
                                 requested.
                             </p>
 
-                            <h3 className="text-xl font-semibold text-foreground mt-6">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground mt-6">
                                 7.3 Revision Requests
                             </h3>
                             <p className="leading-relaxed">
@@ -387,11 +401,11 @@ export default function TermsPage() {
                         </section>
 
                         {/* Intellectual Property */}
-                        <section className="space-y-4">
-                            <h2 className="text-2xl font-bold text-foreground">
+                        <section className="space-y-3 sm:space-y-4">
+                            <h2 className="text-xl sm:text-2xl font-bold text-foreground">
                                 8. Intellectual Property Rights
                             </h2>
-                            <h3 className="text-xl font-semibold text-foreground">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground">
                                 8.1 Client Ownership
                             </h3>
                             <p className="leading-relaxed">
@@ -401,7 +415,7 @@ export default function TermsPage() {
                                 for their project, subject to the terms below.
                             </p>
 
-                            <h3 className="text-xl font-semibold text-foreground mt-6">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground mt-6">
                                 8.2 Third-Party Components
                             </h3>
                             <p className="leading-relaxed">
@@ -412,7 +426,7 @@ export default function TermsPage() {
                                 these components.
                             </p>
 
-                            <h3 className="text-xl font-semibold text-foreground mt-6">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground mt-6">
                                 8.3 Company Rights
                             </h3>
                             <p className="leading-relaxed">
@@ -428,11 +442,12 @@ export default function TermsPage() {
                                     Client approval)
                                 </li>
                                 <li>
-                                    Reuse non-specific code patterns and solutions
+                                    Reuse non-specific code patterns and
+                                    solutions
                                 </li>
                             </ul>
 
-                            <h3 className="text-xl font-semibold text-foreground mt-6">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground mt-6">
                                 8.4 Client Materials
                             </h3>
                             <p className="leading-relaxed">
@@ -445,11 +460,11 @@ export default function TermsPage() {
                         </section>
 
                         {/* Warranties and Disclaimers */}
-                        <section className="space-y-4">
-                            <h2 className="text-2xl font-bold text-foreground">
+                        <section className="space-y-3 sm:space-y-4">
+                            <h2 className="text-xl sm:text-2xl font-bold text-foreground">
                                 9. Warranties and Disclaimers
                             </h2>
-                            <h3 className="text-xl font-semibold text-foreground">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground">
                                 9.1 Service Quality
                             </h3>
                             <p className="leading-relaxed">
@@ -458,7 +473,7 @@ export default function TermsPage() {
                                 with industry standards.
                             </p>
 
-                            <h3 className="text-xl font-semibold text-foreground mt-6">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground mt-6">
                                 9.2 No Guarantees
                             </h3>
                             <p className="leading-relaxed">
@@ -469,14 +484,17 @@ export default function TermsPage() {
                                     Specific business results, revenue, or
                                     conversions
                                 </li>
-                                <li>Compatibility with all devices or browsers</li>
+                                <li>
+                                    Compatibility with all devices or browsers
+                                </li>
                                 <li>
                                     Uninterrupted or error-free operation of the
                                     delivered product
                                 </li>
                                 <li>
-                                    That the product will meet all of the Client's
-                                    requirements (beyond the agreed scope)
+                                    That the product will meet all of the
+                                    Client's requirements (beyond the agreed
+                                    scope)
                                 </li>
                                 <li>
                                     Third-party service availability or
@@ -484,7 +502,7 @@ export default function TermsPage() {
                                 </li>
                             </ul>
 
-                            <h3 className="text-xl font-semibold text-foreground mt-6">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground mt-6">
                                 9.3 Disclaimer
                             </h3>
                             <p className="leading-relaxed uppercase">
@@ -508,9 +526,10 @@ export default function TermsPage() {
                             <ul className="list-disc list-inside space-y-2 ml-4">
                                 <li>
                                     Our total liability for any claims arising
-                                    from or related to these Terms or our services
-                                    shall not exceed the total amount paid by the
-                                    Client for the specific project in question
+                                    from or related to these Terms or our
+                                    services shall not exceed the total amount
+                                    paid by the Client for the specific project
+                                    in question
                                 </li>
                                 <li>
                                     We shall not be liable for any indirect,
@@ -528,8 +547,8 @@ export default function TermsPage() {
                         </section>
 
                         {/* Client Obligations */}
-                        <section className="space-y-4">
-                            <h2 className="text-2xl font-bold text-foreground">
+                        <section className="space-y-3 sm:space-y-4">
+                            <h2 className="text-xl sm:text-2xl font-bold text-foreground">
                                 11. Client Obligations and Responsibilities
                             </h2>
                             <p className="leading-relaxed">
@@ -541,17 +560,17 @@ export default function TermsPage() {
                                     information and materials
                                 </li>
                                 <li>
-                                    Respond to requests for feedback and approvals
-                                    within reasonable timeframes
+                                    Respond to requests for feedback and
+                                    approvals within reasonable timeframes
                                 </li>
                                 <li>
-                                    Ensure all content provided is legal, does not
-                                    infringe on third-party rights, and complies
-                                    with applicable laws
+                                    Ensure all content provided is legal, does
+                                    not infringe on third-party rights, and
+                                    complies with applicable laws
                                 </li>
                                 <li>
-                                    Obtain necessary licenses for any third-party
-                                    content or services
+                                    Obtain necessary licenses for any
+                                    third-party content or services
                                 </li>
                                 <li>
                                     Not use our services for any illegal or
@@ -569,11 +588,11 @@ export default function TermsPage() {
                         </section>
 
                         {/* Termination */}
-                        <section className="space-y-4">
-                            <h2 className="text-2xl font-bold text-foreground">
+                        <section className="space-y-3 sm:space-y-4">
+                            <h2 className="text-xl sm:text-2xl font-bold text-foreground">
                                 12. Termination
                             </h2>
-                            <h3 className="text-xl font-semibold text-foreground">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground">
                                 12.1 Termination by Client
                             </h3>
                             <p className="leading-relaxed">
@@ -585,7 +604,7 @@ export default function TermsPage() {
                                 code.
                             </p>
 
-                            <h3 className="text-xl font-semibold text-foreground mt-6">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground mt-6">
                                 12.2 Termination by Company
                             </h3>
                             <p className="leading-relaxed">
@@ -599,9 +618,7 @@ export default function TermsPage() {
                                     The Client is unresponsive for more than 30
                                     days
                                 </li>
-                                <li>
-                                    The Client breaches these Terms
-                                </li>
+                                <li>The Client breaches these Terms</li>
                                 <li>
                                     The Client engages in abusive or harassing
                                     behavior
@@ -619,8 +636,8 @@ export default function TermsPage() {
                         </section>
 
                         {/* Confidentiality */}
-                        <section className="space-y-4">
-                            <h2 className="text-2xl font-bold text-foreground">
+                        <section className="space-y-3 sm:space-y-4">
+                            <h2 className="text-xl sm:text-2xl font-bold text-foreground">
                                 13. Confidentiality
                             </h2>
                             <p className="leading-relaxed">
@@ -638,15 +655,13 @@ export default function TermsPage() {
                                     Is independently developed without use of
                                     confidential information
                                 </li>
-                                <li>
-                                    Must be disclosed by law or court order
-                                </li>
+                                <li>Must be disclosed by law or court order</li>
                             </ul>
                         </section>
 
                         {/* Indemnification */}
-                        <section className="space-y-4">
-                            <h2 className="text-2xl font-bold text-foreground">
+                        <section className="space-y-3 sm:space-y-4">
+                            <h2 className="text-xl sm:text-2xl font-bold text-foreground">
                                 14. Indemnification
                             </h2>
                             <p className="leading-relaxed">
@@ -674,11 +689,11 @@ export default function TermsPage() {
                         </section>
 
                         {/* Dispute Resolution */}
-                        <section className="space-y-4">
-                            <h2 className="text-2xl font-bold text-foreground">
+                        <section className="space-y-3 sm:space-y-4">
+                            <h2 className="text-xl sm:text-2xl font-bold text-foreground">
                                 15. Dispute Resolution
                             </h2>
-                            <h3 className="text-xl font-semibold text-foreground">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground">
                                 15.1 Good Faith Negotiation
                             </h3>
                             <p className="leading-relaxed">
@@ -687,7 +702,7 @@ export default function TermsPage() {
                                 good faith negotiation via Discord.
                             </p>
 
-                            <h3 className="text-xl font-semibold text-foreground mt-6">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground mt-6">
                                 15.2 Arbitration
                             </h3>
                             <p className="leading-relaxed">
@@ -699,7 +714,7 @@ export default function TermsPage() {
                                 jurisdiction where Orbits LLC is registered.
                             </p>
 
-                            <h3 className="text-xl font-semibold text-foreground mt-6">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground mt-6">
                                 15.3 Governing Law
                             </h3>
                             <p className="leading-relaxed">
@@ -711,11 +726,11 @@ export default function TermsPage() {
                         </section>
 
                         {/* Miscellaneous */}
-                        <section className="space-y-4">
-                            <h2 className="text-2xl font-bold text-foreground">
+                        <section className="space-y-3 sm:space-y-4">
+                            <h2 className="text-xl sm:text-2xl font-bold text-foreground">
                                 16. Miscellaneous Provisions
                             </h2>
-                            <h3 className="text-xl font-semibold text-foreground">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground">
                                 16.1 Entire Agreement
                             </h3>
                             <p className="leading-relaxed">
@@ -725,7 +740,7 @@ export default function TermsPage() {
                                 prior communications and proposals.
                             </p>
 
-                            <h3 className="text-xl font-semibold text-foreground mt-6">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground mt-6">
                                 16.2 Amendments
                             </h3>
                             <p className="leading-relaxed">
@@ -736,7 +751,7 @@ export default function TermsPage() {
                                 modified Terms.
                             </p>
 
-                            <h3 className="text-xl font-semibold text-foreground mt-6">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground mt-6">
                                 16.3 Severability
                             </h3>
                             <p className="leading-relaxed">
@@ -747,7 +762,7 @@ export default function TermsPage() {
                                 remain in full force and effect.
                             </p>
 
-                            <h3 className="text-xl font-semibold text-foreground mt-6">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground mt-6">
                                 16.4 Waiver
                             </h3>
                             <p className="leading-relaxed">
@@ -759,7 +774,7 @@ export default function TermsPage() {
                                 provision.
                             </p>
 
-                            <h3 className="text-xl font-semibold text-foreground mt-6">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground mt-6">
                                 16.5 Assignment
                             </h3>
                             <p className="leading-relaxed">
@@ -768,7 +783,7 @@ export default function TermsPage() {
                                 assign these Terms without restriction.
                             </p>
 
-                            <h3 className="text-xl font-semibold text-foreground mt-6">
+                            <h3 className="text-lg sm:text-xl font-semibold text-foreground mt-6">
                                 16.6 Force Majeure
                             </h3>
                             <p className="leading-relaxed">
@@ -782,8 +797,8 @@ export default function TermsPage() {
                         </section>
 
                         {/* Contact */}
-                        <section className="space-y-4">
-                            <h2 className="text-2xl font-bold text-foreground">
+                        <section className="space-y-3 sm:space-y-4">
+                            <h2 className="text-xl sm:text-2xl font-bold text-foreground">
                                 17. Contact Information
                             </h2>
                             <p className="leading-relaxed">
@@ -798,8 +813,8 @@ export default function TermsPage() {
                                     <strong>Email:</strong> hello@orbitsllc.com
                                 </p>
                                 <p>
-                                    <strong>Discord:</strong> Join our server for
-                                    official communications
+                                    <strong>Discord:</strong> Join our server
+                                    for official communications
                                 </p>
                             </div>
                             <p className="leading-relaxed mt-4 font-semibold text-foreground">
