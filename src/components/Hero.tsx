@@ -18,19 +18,19 @@ export default function Hero() {
         <div className="flex-1 flex flex-col items-center justify-center px-6 md:px-12 py-8 md:py-12 relative">
             <div className="max-w-[1600px] w-full flex items-center justify-between gap-8 md:gap-12">
                 {/* Left Side - Text Content */}
-                <div className="flex flex-col max-w-2xl space-y-6">
+                <div className="flex flex-col max-w-2xl space-y-6 text-center lg:text-center mx-auto lg:mx-0">
                     <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-                        Crafting digital solutions for tomorrow
+                        Digital solutions for tomorrow
                     </h1>
 
-                    <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-xl">
+                    <p className="text-center sm:text-lg md:text-xl text-muted-foreground  lg:mx-0">
                         Our software design and development agency helps
                         businesses innovate and scale through custom web
                         applications, mobile apps, UI/UX design, and enterprise
                         solutions.
                     </p>
 
-                    <Button className="bg-primary text-primary-foreground hover:bg-primary/90 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-4 rounded-xl w-fit transition-all duration-300">
+                    <Button className=" sm:text-lg px-6 sm:px-8 py-4 sm:py-4 rounded-xl  transition-all duration-300">
                         Start a project
                     </Button>
                 </div>
