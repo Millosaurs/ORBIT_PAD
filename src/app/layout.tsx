@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: "ORBITS LLC - Software Design & Development",
+    title: "ORBITS LLC ",
     description: "Crafting digital solutions for tomorrow",
 };
 
