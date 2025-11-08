@@ -57,7 +57,7 @@ export function Footer() {
                             development.
                         </p>
                         {/* Social Links */}
-                        <div className="flex gap-3">
+                        {/*<div className="flex gap-3">
                             {socialLinks.map((social) => {
                                 const Icon = social.icon;
                                 return (
@@ -72,7 +72,7 @@ export function Footer() {
                                     </Button>
                                 );
                             })}
-                        </div>
+                        </div>*/}
                     </div>
 
                     {/* Company Links */}
