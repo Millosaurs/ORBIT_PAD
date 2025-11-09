@@ -14,7 +14,7 @@ export default function TermsPage() {
                         Terms of Service
                     </h1>
                     <p className="text-sm sm:text-base text-muted-foreground mb-6 sm:mb-8">
-                        Last updated: {new Date().toLocaleDateString()}
+                        Last updated: 8-11-2025
                     </p>
 
                     <div className="space-y-6 sm:space-y-8 text-sm sm:text-base text-muted-foreground">

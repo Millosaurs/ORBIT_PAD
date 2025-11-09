@@ -33,7 +33,7 @@ export function CTA() {
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 pt-4 px-4">
                             <Button
                                 size="lg"
-                                className="w-full sm:w-auto px-6 sm:px-8 py-5 sm:py-6 text-sm sm:text-base bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
+                                className="w-full sm:w-auto px-6 sm:px-8 py-4 sm:py-4 text-sm sm:text-base bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
                             >
                                 Start your project
                             </Button>

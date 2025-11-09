@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Button } from "../ui/button";
 import { Separator } from "../ui/separator";
 import { Github, Linkedin, Twitter, Mail } from "lucide-react";
-import { useTheme } from "../providers/ThemeProvider";
+import { useIsDark } from "../providers/ThemeProvider";
 
 const footerLinks = {
     company: [
@@ -25,12 +25,7 @@ const socialLinks = [
 ];
 
 export function Footer() {
-    const { theme } = useTheme();
-    const isDark =
-        theme === "dark" ||
-        (theme === "system" &&
-            typeof window !== "undefined" &&
-            window.matchMedia("(prefers-color-scheme: dark)").matches);
+    const isDark = useIsDark();
 
     return (
         <footer className="bg-card border-t border-border">

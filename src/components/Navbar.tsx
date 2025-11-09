@@ -6,16 +6,11 @@ import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { ThemeToggle } from "./ThemeToggle";
-import { useTheme } from "./providers/ThemeProvider";
+import { useIsDark } from "./providers/ThemeProvider";
 
 export const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const { theme } = useTheme();
-    const isDark =
-        theme === "dark" ||
-        (theme === "system" &&
-            typeof window !== "undefined" &&
-            window.matchMedia("(prefers-color-scheme: dark)").matches);
+    const isDark = useIsDark();
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);

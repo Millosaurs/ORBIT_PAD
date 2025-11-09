@@ -4,16 +4,11 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/sections/Footer";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { useTheme } from "@/components/providers/ThemeProvider";
+import { useIsDark } from "@/components/providers/ThemeProvider";
 import Image from "next/image";
 
 export default function NotFound() {
-    const { theme } = useTheme();
-    const isDark =
-        theme === "dark" ||
-        (theme === "system" &&
-            typeof window !== "undefined" &&
-            window.matchMedia("(prefers-color-scheme: dark)").matches);
+    const isDark = useIsDark();
 
     return (
         <div className="min-h-screen flex flex-col">

@@ -62,19 +62,19 @@ export function StatsCounter() {
     };
 
     return (
-        <div className="flex flex-wrap items-center gap-6 md:gap-8 lg:gap-12 p-6 md:p-8 bg-card/50 backdrop-blur-sm border border-border rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500">
+        <div className="grid grid-cols-2 sm:flex sm:flex-wrap items-center gap-3 sm:gap-4 md:gap-6 lg:gap-8 p-3 sm:p-4 md:p-6 lg:p-8 bg-card/50 backdrop-blur-sm border border-border rounded-xl sm:rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 max-w-full">
             {stats.map((stat, index) => {
                 const isHovered = hoveredIndex === index;
                 return (
                     <div
                         key={stat.label}
-                        className="flex flex-col min-w-[140px] cursor-pointer group transition-all duration-300 hover:scale-110"
+                        className="flex flex-col min-w-0 sm:min-w-[120px] md:min-w-[140px] cursor-pointer group transition-all duration-300 hover:scale-105 sm:hover:scale-110"
                         onMouseEnter={() => setHoveredIndex(index)}
                         onMouseLeave={() => setHoveredIndex(null)}
                     >
-                        <div className="flex items-baseline gap-1">
+                        <div className="flex items-baseline gap-0.5 sm:gap-1">
                             <span
-                                className={`text-3xl md:text-4xl lg:text-5xl font-bold text-foreground tabular-nums transition-all duration-300 ${
+                                className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground tabular-nums transition-all duration-300 ${
                                     isHovered
                                         ? "text-lime-500 dark:text-lime-400"
                                         : ""
@@ -84,7 +84,7 @@ export function StatsCounter() {
                             </span>
                             {stat.suffix && (
                                 <span
-                                    className={`text-xl md:text-2xl font-semibold text-muted-foreground transition-all duration-300 ${
+                                    className={`text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-muted-foreground transition-all duration-300 ${
                                         isHovered
                                             ? "text-lime-500 dark:text-lime-400"
                                             : ""
@@ -95,7 +95,7 @@ export function StatsCounter() {
                             )}
                         </div>
                         <span
-                            className={`text-sm md:text-base text-muted-foreground mt-1 transition-colors duration-300 ${
+                            className={`text-xs sm:text-sm md:text-base text-muted-foreground mt-0.5 sm:mt-1 transition-colors duration-300 truncate ${
                                 isHovered ? "text-foreground" : ""
                             }`}
                         >
@@ -103,10 +103,10 @@ export function StatsCounter() {
                         </span>
                         {/* Animated underline */}
                         <div
-                            className={`h-0.5 bg-lime-400 dark:bg-lime-500 mt-2 transition-all duration-300 ${
+                            className={`h-0.5 bg-lime-400 dark:bg-lime-500 mt-1 sm:mt-2 transition-all duration-300 ${
                                 isHovered ? "w-full" : "w-0"
                             }`}
-                        ></div>
+                        />
                     </div>
                 );
             })}

@@ -29,7 +29,10 @@ export function ThemeProvider({
     ...props
 }: ThemeProviderProps) {
     const [theme, setTheme] = useState<Theme>(
-        () => (typeof window !== "undefined" && (localStorage.getItem(storageKey) as Theme)) || defaultTheme
+        () =>
+            (typeof window !== "undefined" &&
+                (localStorage.getItem(storageKey) as Theme)) ||
+            defaultTheme,
     );
 
     useEffect(() => {
@@ -38,8 +41,9 @@ export function ThemeProvider({
         root.classList.remove("light", "dark");
 
         if (theme === "system") {
-            const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
-                .matches
+            const systemTheme = window.matchMedia(
+                "(prefers-color-scheme: dark)",
+            ).matches
                 ? "dark"
                 : "light";
 
@@ -72,4 +76,32 @@ export const useTheme = () => {
         throw new Error("useTheme must be used within a ThemeProvider");
 
     return context;
+};
+
+export const useIsDark = () => {
+    const { theme } = useTheme();
+    const [isDark, setIsDark] = useState(false);
+
+    useEffect(() => {
+        const updateTheme = () => {
+            const dark =
+                theme === "dark" ||
+                (theme === "system" &&
+                    window.matchMedia("(prefers-color-scheme: dark)").matches);
+            setIsDark(dark);
+        };
+
+        updateTheme();
+
+        if (theme === "system") {
+            const mediaQuery = window.matchMedia(
+                "(prefers-color-scheme: dark)",
+            );
+            const handler = () => updateTheme();
+            mediaQuery.addEventListener("change", handler);
+            return () => mediaQuery.removeEventListener("change", handler);
+        }
+    }, [theme]);
+
+    return isDark;
 };
