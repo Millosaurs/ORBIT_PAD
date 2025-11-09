@@ -83,20 +83,13 @@ export default function Home() {
 
     return (
         <>
-            {/* Global styles to hide scrollbar */}
+            {/* Global styles */}
             <style jsx global>{`
                 html {
                     scroll-behavior: smooth;
                 }
                 body {
                     overflow-x: hidden;
-                }
-                body::-webkit-scrollbar {
-                    display: none;
-                }
-                body {
-                    -ms-overflow-style: none;
-                    scrollbar-width: none;
                 }
             `}</style>
 
