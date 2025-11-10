@@ -60,7 +60,7 @@ export default function AboutPage() {
               variants={fadeUp}
               initial="hidden"
               whileInView="show"
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
               className="p-6 rounded-2xl bg-muted/20 border border-border hover:border-lime-400/40 transition-colors"
             >
@@ -76,8 +76,8 @@ export default function AboutPage() {
             <motion.section
               variants={fadeUp}
               initial="hidden"
-              whileInView="show"
-              transition={{ duration: 0.7, delay: 0.1 }}
+              whileInView="show"    
+              transition={{ duration: 0.6, delay: 0.15 }}
               viewport={{ once: true }}
               className="p-6 rounded-2xl bg-muted/20 border border-border hover:border-lime-400/40 transition-colors"
             >
