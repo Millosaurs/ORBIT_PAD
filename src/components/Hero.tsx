@@ -46,6 +46,7 @@ export default function Hero() {
                     <div className="absolute top-8 right-12 w-14 h-14 bg-lime-400 dark:bg-lime-500 rounded-full flex items-center justify-center">
                         <Share2 className="w-7 h-7 text-black dark:text-white" />
                     </div>
+                    {/* comment */}
 
                     {/* Middle Right - Play */}
                     <div className="absolute top-1/2 right-8 w-14 h-14 bg-black dark:bg-white rounded-full flex items-center justify-center transform -translate-y-1/2">
