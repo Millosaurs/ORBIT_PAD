@@ -1,243 +1,207 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/sections/Footer";
 
+const fadeUp = {
+  hidden: { opacity: 0, y: 40 },
+  show: { opacity: 1, y: 0 },
+};
+
 export default function AboutPage() {
-    return (
-        <>
-            {/* Main Content - Full Screen */}
-            <div className=" flex flex-col overflow-hidden">
-                <Navbar />
+  return (
+    <div className="flex flex-col min-h-screen bg-background text-foreground">
+      <Navbar />
 
-                <main className="flex-1 px-6 md:px-12 py-12 overflow-hidden bg-background">
-                    <div className="max-w-[1800px] mx-auto h-full flex flex-col">
-                        {/* Header */}
-                        <div className="mb-6 md:mb-8 lg:mb-12 py-4 md:py-6 lg:py-8 text-center shrink-0">
-                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 md:mb-6 px-4">
-                                About Orbits LLC
-                            </h1>
-                            <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
-                                Building exceptional digital experiences through
-                                innovation, collaboration, and expertise.
-                            </p>
-                        </div>
+      {/* Full page wrapper with gradient and dots */}
+      <div className="flex-1 relative w-full">
+        {/* Pixel dots background pattern */}
+        <div 
+          className="absolute inset-0 pointer-events-none opacity-30"
+          style={{
+            backgroundImage: `radial-gradient(circle, rgba(163, 230, 53, 0.4) 1px, transparent 1px)`,
+            backgroundSize: '24px 24px',
+          }}
+        />
 
-                        {/* Two Column Layout */}
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 flex-1 overflow-y-auto lg:overflow-hidden px-4">
-                            {/* Left Column */}
-                            <div className="space-y-6 md:space-y-8">
-                                {/* Mission */}
-                                <section className="space-y-3 md:space-y-4 p-4 md:p-6 rounded-xl bg-muted/30 border border-border">
-                                    <h2 className="text-2xl md:text-3xl font-bold">
-                                        Our Mission
-                                    </h2>
-                                    <p className="text-base text-muted-foreground leading-relaxed">
-                                        We're on a mission to transform
-                                        businesses through innovative design and
-                                        cutting-edge technology. Our goal is to
-                                        create digital experiences that not only
-                                        look stunning but drive real, measurable
-                                        results for our clients.
-                                    </p>
-                                </section>
+        {/* Subtle gradient overlay */}
+        <div 
+          className="absolute top-0 left-0 right-0 h-[100vh] pointer-events-none"
+          style={{
+            background: 'radial-gradient(ellipse 60% 40% at 50% 10%, rgba(163, 230, 53, 0.08), rgba(132, 204, 22, 0.04) 50%, transparent 80%)',
+          }}
+        />
 
-                                {/* Story */}
-                                <section className="space-y-3 md:space-y-4 p-4 md:p-6 rounded-xl bg-card border border-border">
-                                    <h2 className="text-2xl md:text-3xl font-bold">
-                                        Our Story
-                                    </h2>
-                                    <div className="space-y-3 text-base text-muted-foreground leading-relaxed">
-                                        <p>
-                                            Founded with a passion for
-                                            technology and design, Orbits LLC
-                                            has grown into a trusted partner for
-                                            businesses looking to make their
-                                            mark in the digital world.
-                                        </p>
-                                        <p>
-                                            Our team of experienced designers,
-                                            developers, and strategists work
-                                            together to create solutions that
-                                            are beautiful, functional, and
-                                            scalable.
-                                        </p>
-                                        <p>
-                                            From startups to established
-                                            enterprises, we've helped countless
-                                            clients bring their visions to life
-                                            through custom web applications and
-                                            stunning UI/UX design.
-                                        </p>
-                                    </div>
-                                </section>
+        <main className="relative z-10 px-6 md:px-12 py-20 md:py-28 max-w-6xl mx-auto">
+          {/* Header */}
+          <motion.div
+            variants={fadeUp}
+            initial="hidden"
+            animate="show"
+            transition={{ duration: 0.6 }}
+            className="text-center mb-24"
+          >
+            {/* Subtle background pill */}
+           
 
-                                {/* Expertise */}
-                                <section className="space-y-3 md:space-y-4">
-                                    <h2 className="text-2xl md:text-3xl font-bold">
-                                        Our Expertise
-                                    </h2>
-                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
-                                        <div className="p-4 md:p-5 rounded-xl bg-card border border-border hover:border-lime-400/50 transition-colors">
-                                            <h3 className="font-bold text-base md:text-lg mb-2">
-                                                Web Development
-                                            </h3>
-                                            <p className="text-sm text-muted-foreground">
-                                                Custom websites & web
-                                                applications
-                                            </p>
-                                        </div>
-                                        <div className="p-4 md:p-5 rounded-xl bg-card border border-border hover:border-lime-400/50 transition-colors">
-                                            <h3 className="font-bold text-base md:text-lg mb-2">
-                                                UI/UX Design
-                                            </h3>
-                                            <p className="text-sm text-muted-foreground">
-                                                Beautiful, intuitive interfaces
-                                            </p>
-                                        </div>
-                                        <div className="p-4 md:p-5 rounded-xl bg-card border border-border hover:border-lime-400/50 transition-colors">
-                                            <h3 className="font-bold text-base md:text-lg mb-2">
-                                                Cloud Solutions
-                                            </h3>
-                                            <p className="text-sm text-muted-foreground">
-                                                Scalable infrastructure
-                                            </p>
-                                        </div>
-                                        <div className="p-4 md:p-5 rounded-xl bg-card border border-border hover:border-lime-400/50 transition-colors">
-                                            <h3 className="font-bold text-base md:text-lg mb-2">
-                                                Technical Consulting
-                                            </h3>
-                                            <p className="text-sm text-muted-foreground">
-                                                Expert guidance & strategy
-                                            </p>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
+              About <span className="text-lime-400">Orbits</span>
+            </h1>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
+              We're a small team of creators, developers, and thinkers — crafting
+              digital experiences that move brands and people forward.
+            </p>
+          </motion.div>
 
-                            {/* Right Column */}
-                            <div className="space-y-6 md:space-y-8">
-                                {/* Values */}
-                                <section className="space-y-3 md:space-y-4">
-                                    <h2 className="text-2xl md:text-3xl font-bold">
-                                        Our Values
-                                    </h2>
-                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5">
-                                        {/* Value 1 */}
-                                        <div className="p-4 md:p-5 rounded-xl bg-card border border-border hover:border-lime-400/50 transition-colors">
-                                            <h3 className="text-lg md:text-xl font-bold mb-2">
-                                                Innovation
-                                            </h3>
-                                            <p className="text-sm text-muted-foreground">
-                                                We constantly push boundaries
-                                                and explore new technologies to
-                                                deliver cutting-edge solutions.
-                                            </p>
-                                        </div>
+          {/* Mission + Story */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-30 max-w-8xl">
+            <motion.section
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="show"
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="p-6 rounded-2xl bg-muted/20 border border-border hover:border-lime-400/40 transition-colors"
+            >
+              <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                Our mission is simple — to design meaningful digital experiences
+                that empower ideas and amplify impact. We blend strategy, design,
+                and technology to build products that feel intuitive, human, and
+                powerful.
+              </p>
+            </motion.section>
 
-                                        {/* Value 2 */}
-                                        <div className="p-4 md:p-5 rounded-xl bg-card border border-border hover:border-lime-400/50 transition-colors">
-                                            <h3 className="text-lg md:text-xl font-bold mb-2">
-                                                Collaboration
-                                            </h3>
-                                            <p className="text-sm text-muted-foreground">
-                                                We work closely with our clients
-                                                as partners to achieve shared
-                                                success.
-                                            </p>
-                                        </div>
+            <motion.section
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="show"
+              transition={{ duration: 0.7, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="p-6 rounded-2xl bg-muted/20 border border-border hover:border-lime-400/40 transition-colors"
+            >
+              <h2 className="text-3xl font-bold mb-4">Our Story</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                Orbits began as a collective of designers and engineers who loved
+                bringing creative ideas to life. Over time, we've become a trusted
+                partner for brands seeking thoughtful design and cutting-edge
+                technology that make a lasting impression.
+              </p>
+            </motion.section>
+          </div>
 
-                                        {/* Value 3 */}
-                                        <div className="p-4 md:p-5 rounded-xl bg-card border border-border hover:border-lime-400/50 transition-colors">
-                                            <h3 className="text-lg md:text-xl font-bold mb-2">
-                                                Excellence
-                                            </h3>
-                                            <p className="text-sm text-muted-foreground">
-                                                We're committed to delivering
-                                                exceptional quality in every
-                                                project we undertake.
-                                            </p>
-                                        </div>
+          {/* Values */}
+          <motion.section
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="mb-24 relative overflow-hidden rounded-3xl"
+          >
+            <div className="absolute inset-0 bg-gradient-to-b from-neutral-800/20 via-transparent to-transparent blur-3xl pointer-events-none "></div>
 
-                                        {/* Value 4 */}
-                                        <div className="p-4 md:p-5 rounded-xl bg-card border border-border hover:border-lime-400/50 transition-colors">
-                                            <h3 className="text-lg md:text-xl font-bold mb-2">
-                                                Growth
-                                            </h3>
-                                            <p className="text-sm text-muted-foreground">
-                                                We're dedicated to helping our
-                                                clients grow and scale their
-                                                businesses.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </section>
+            <h2 className="text-3xl font-bold mb-12 text-center relative z-10">
+              <span className="text-zinc-200">Our Values</span>
+            </h2>
 
-                                {/* Approach */}
-                                <section className="space-y-3 md:space-y-4 p-4 md:p-6 rounded-xl bg-muted/30 border border-border">
-                                    <h2 className="text-2xl md:text-3xl font-bold">
-                                        Our Approach
-                                    </h2>
-                                    <div className="space-y-3 text-base text-muted-foreground leading-relaxed">
-                                        <p>
-                                            We believe in a collaborative,
-                                            transparent process that keeps you
-                                            involved every step of the way. From
-                                            initial concept to final deployment,
-                                            we work as an extension of your
-                                            team.
-                                        </p>
-                                        <p>
-                                            Our agile methodology ensures rapid
-                                            iteration and continuous
-                                            improvement, delivering value at
-                                            every stage of development.
-                                        </p>
-                                    </div>
-                                </section>
-
-                                {/* Stats */}
-                                <section className="space-y-3 md:space-y-4">
-                                    <h2 className="text-2xl md:text-3xl font-bold">
-                                        By The Numbers
-                                    </h2>
-                                    <div className="grid grid-cols-3 gap-3 md:gap-4">
-                                        <div className="text-center p-3 md:p-4 lg:p-6 bg-card border border-border rounded-xl hover:border-lime-400/50 transition-colors">
-                                            <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-lime-400 dark:text-lime-500 mb-1 md:mb-2">
-                                                50+
-                                            </div>
-                                            <div className="text-xs md:text-sm text-muted-foreground font-medium">
-                                                Projects
-                                            </div>
-                                        </div>
-                                        <div className="text-center p-3 md:p-4 lg:p-6 bg-card border border-border rounded-xl hover:border-lime-400/50 transition-colors">
-                                            <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-lime-400 dark:text-lime-500 mb-1 md:mb-2">
-                                                30+
-                                            </div>
-                                            <div className="text-xs md:text-sm text-muted-foreground font-medium">
-                                                Clients
-                                            </div>
-                                        </div>
-                                        <div className="text-center p-3 md:p-4 lg:p-6 bg-card border border-border rounded-xl hover:border-lime-400/50 transition-colors">
-                                            <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-lime-400 dark:text-lime-500 mb-1 md:mb-2">
-                                                100%
-                                            </div>
-                                            <div className="text-xs md:text-sm text-muted-foreground font-medium">
-                                                Satisfaction
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                    </div>
-                </main>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10 ">
+              {[
+                { title: "Innovation", desc: "Pushing boundaries through creativity and technology." },
+                { title: "Craft", desc: "Attention to detail and a love for beautiful, functional design." },
+                { title: "Collaboration", desc: "Working closely with clients as partners in success." },
+                { title: "Integrity", desc: "Building with honesty, respect, and authenticity." },
+              ].map((item, i) => (
+                <motion.div
+                  key={i}
+                  whileHover={{
+                    y: -6,
+                    scale: 1,
+                    boxShadow: "0 0 25px rgba(255,255,255,0.05)",
+                    borderColor: "rgba(255,255,255,0.15)",
+                  }}
+                  transition={{ type: "spring", stiffness: 200, damping: 15 }}
+                  className="p-6 rounded-2xl bg-gradient-to-br from-zinc-900/30 via-zinc-800/20 to-zinc-900/20 border border-zinc-800 transition-all backdrop-blur-md"
+                >
+                  <h3 className="font-bold text-xl mb-2 text-zinc-100 text-center">{item.title}</h3>
+                  <p className="text-sm text-zinc-400 text-center   ">{item.desc}</p>
+                </motion.div>
+              ))}
             </div>
+          </motion.section>
 
-            {/* Footer - Appears after scroll */}
-            <div className="w-full">
-                <Footer />
+          {/* Expertise */}
+          <motion.section
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="mb-24 relative overflow-hidden rounded-3xl"
+          >
+            <div className="absolute inset-0 bg-gradient-to-b from-lime-900/10 via-transparent to-transparent blur-3xl pointer-events-none"></div>
+
+            <h2 className="text-3xl font-bold mb-12 text-center relative z-10">
+              <span className="">Our Expertise</span>
+            </h2>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10">
+              {[
+                { title: "Web Development", desc: "Custom websites and web applications." },
+                { title: "UI/UX Design", desc: "Intuitive and visually engaging interfaces." },
+                { title: "Cloud Solutions", desc: "Scalable, secure, and efficient cloud systems." },
+                { title: "Technology Consulting", desc: "Helping businesses leverage tech effectively." },
+              ].map((item, i) => (
+                <motion.div
+                  key={i}
+                  whileHover={{
+                    y: -6,
+                    scale: 1,
+                    boxShadow: "0 0 25px rgba(163, 230, 53, 0.2)",
+                    borderColor: "rgba(163, 230, 53, 0.5)",
+                  }}
+                  transition={{ type: "spring", stiffness: 200, damping: 15 }}
+                  className="p-6 rounded-2xl bg-gradient-to-br from-muted/30 via-background to-muted/20 border border-border transition-all backdrop-blur-md"
+                >
+                  <h3 className="font-bold text-xl mb-2 text-lime-400 text-center">{item.title}</h3>
+                  <p className="text-sm text-muted-foreground text-center">{item.desc}</p>
+                </motion.div>
+              ))}
             </div>
-        </>
-    );
+          </motion.section>
+
+          {/* Stats */}
+          <motion.section
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center"
+          >
+            <h2 className="text-3xl font-bold mb-10">By The Numbers</h2>
+            <div className="grid grid-cols-3 gap-6 max-w-3xl mx-auto">
+              {[
+                { num: "50+", label: "Projects" },
+                { num: "30+", label: "Clients" },
+                { num: "100%", label: "Satisfaction" },
+              ].map((stat, i) => (
+                <motion.div
+                  key={i}
+                  whileHover={{ scale: 1.05 }}
+                  className="p-6 rounded-2xl bg-muted/20 border border-border transition-all"
+                >
+                  <div className="text-4xl font-bold text-lime-400 mb-2">{stat.num}</div>
+                  <p className="text-sm text-muted-foreground font-medium">{stat.label}</p>
+                </motion.div>
+              ))}
+            </div>
+          </motion.section>
+        </main>
+      </div>
+
+      <Footer />
+    </div>
+  );
 }
