@@ -60,7 +60,7 @@ export default function AboutPage() {
               variants={fadeUp}
               initial="hidden"
               whileInView="show"
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
               className="p-6 rounded-2xl bg-muted/20 border border-border hover:border-lime-400/40 transition-colors"
             >
@@ -76,8 +76,8 @@ export default function AboutPage() {
             <motion.section
               variants={fadeUp}
               initial="hidden"
-              whileInView="show"
-              transition={{ duration: 0.7, delay: 0.1 }}
+              whileInView="show"    
+              transition={{ duration: 0.6, delay: 0.15 }}
               viewport={{ once: true }}
               className="p-6 rounded-2xl bg-muted/20 border border-border hover:border-lime-400/40 transition-colors"
             >
@@ -92,44 +92,49 @@ export default function AboutPage() {
           </div>
 
           {/* Values */}
-          <motion.section
-            variants={fadeUp}
-            initial="hidden"
-            whileInView="show"
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="mb-24 relative overflow-hidden rounded-3xl"
-          >
-            <div className="absolute inset-0 bg-gradient-to-b from-neutral-800/20 via-transparent to-transparent blur-3xl pointer-events-none "></div>
+         <motion.section
+  variants={fadeUp}
+  initial="hidden"
+  whileInView="show"
+  transition={{ duration: 0.6 }}
+  viewport={{ once: true }}
+  className="mb-24 relative overflow-hidden rounded-3xl p-7"
+>
+  
+  <div className="absolute inset-0 bg-gradient-to-b from-lime-900/10 via-transparent to-transparent blur-3xl pointer-events-none"></div>
 
-            <h2 className="text-3xl font-bold mb-12 text-center relative z-10">
-              <span className="text-zinc-200">Our Values</span>
-            </h2>
+  <h2 className="text-3xl font-bold mb-12 text-center relative z-10">
+    <span className="">Our Values</span>
+  </h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10 ">
-              {[
-                { title: "Innovation", desc: "Pushing boundaries through creativity and technology." },
-                { title: "Craft", desc: "Attention to detail and a love for beautiful, functional design." },
-                { title: "Collaboration", desc: "Working closely with clients as partners in success." },
-                { title: "Integrity", desc: "Building with honesty, respect, and authenticity." },
-              ].map((item, i) => (
-                <motion.div
-                  key={i}
-                  whileHover={{
-                    y: -6,
-                    scale: 1,
-                    boxShadow: "0 0 25px rgba(255,255,255,0.05)",
-                    borderColor: "rgba(255,255,255,0.15)",
-                  }}
-                  transition={{ type: "spring", stiffness: 200, damping: 15 }}
-                  className="p-6 rounded-2xl bg-gradient-to-br from-zinc-900/30 via-zinc-800/20 to-zinc-900/20 border border-zinc-800 transition-all backdrop-blur-md"
-                >
-                  <h3 className="font-bold text-xl mb-2 text-zinc-100 text-center">{item.title}</h3>
-                  <p className="text-sm text-zinc-400 text-center   ">{item.desc}</p>
-                </motion.div>
-              ))}
-            </div>
-          </motion.section>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10">
+    {[
+      { title: "Innovation", desc: "Pushing boundaries through creativity and technology." },
+      { title: "Craft", desc: "Attention to detail and a love for beautiful, functional design." },
+      { title: "Collaboration", desc: "Working closely with clients as partners in success." },
+      { title: "Integrity", desc: "Building with honesty, respect, and authenticity." },
+    ].map((item, i) => (
+      <motion.div
+        key={i}
+        whileHover={{
+          y: -6,
+          scale: 1,
+          boxShadow: "0 0 25px rgba(163, 230, 53, 0.2)",
+          borderColor: "rgba(163, 230, 53, 0.5)",
+        }}
+        transition={{ type: "spring", stiffness: 200, damping: 15 }}
+        className="p-6 rounded-2xl overflow-hidden
+  bg-gradient-to-br from-muted/30 via-background to-muted/20
+  border border-border transition-all backdrop-blur-md
+"
+      >
+        <h3 className="font-bold text-xl mb-2 text-lime-400 text-center">{item.title}</h3>
+        <p className="text-sm text-muted-foreground text-center">{item.desc}</p>
+      </motion.div>
+    ))}
+  </div>
+</motion.section>
+
 
           {/* Expertise */}
           <motion.section
@@ -138,7 +143,7 @@ export default function AboutPage() {
             whileInView="show"
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="mb-24 relative overflow-hidden rounded-3xl"
+            className="mb-24 relative overflow-hidden rounded-3xl p-7"
           >
             <div className="absolute inset-0 bg-gradient-to-b from-lime-900/10 via-transparent to-transparent blur-3xl pointer-events-none"></div>
 
@@ -162,7 +167,10 @@ export default function AboutPage() {
                     borderColor: "rgba(163, 230, 53, 0.5)",
                   }}
                   transition={{ type: "spring", stiffness: 200, damping: 15 }}
-                  className="p-6 rounded-2xl bg-gradient-to-br from-muted/30 via-background to-muted/20 border border-border transition-all backdrop-blur-md"
+                  className="p-6 rounded-2xl overflow-hidden
+  bg-gradient-to-br from-muted/30 via-background to-muted/20
+  border border-border transition-all backdrop-blur-md
+"   
                 >
                   <h3 className="font-bold text-xl mb-2 text-lime-400 text-center">{item.title}</h3>
                   <p className="text-sm text-muted-foreground text-center">{item.desc}</p>
