@@ -77,7 +77,7 @@ export default function Hero() {
                         Digital solutions for tomorrow
                     </h1>
                     <div className="bg-black/50 rounded-lg p-4 sm:p-6">
-                        <p className=" sm:text-lg md:text-xl text-muted-foreground">
+                        <p className=" sm:text-lg md:text-xl text-white/80">
                             Our software design and development agency helps
                             businesses innovate and scale through custom web
                             applications, UI/UX design, and enterprise
