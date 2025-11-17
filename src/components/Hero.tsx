@@ -46,7 +46,6 @@ export default function Hero() {
                     <div className="absolute top-8 right-12 w-14 h-14 bg-lime-400 dark:bg-lime-500 rounded-full flex items-center justify-center">
                         <Share2 className="w-7 h-7 text-black dark:text-white" />
                     </div>
-                    {/* comment */}
 
                     {/* Middle Right - Play */}
                     <div className="absolute top-1/2 right-8 w-14 h-14 bg-black dark:bg-white rounded-full flex items-center justify-center transform -translate-y-1/2">
@@ -77,7 +76,7 @@ export default function Hero() {
                     <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
                         Digital solutions for tomorrow
                     </h1>
-                    <div className="bg-black/50 rounded-lg">
+                    <div className="bg-black/50 rounded-lg p-4 sm:p-6">
                         <p className=" sm:text-lg md:text-xl text-muted-foreground">
                             Our software design and development agency helps
                             businesses innovate and scale through custom web
