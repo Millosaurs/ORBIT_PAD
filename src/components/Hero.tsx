@@ -77,12 +77,14 @@ export default function Hero() {
                     <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
                         Digital solutions for tomorrow
                     </h1>
-
-                    <p className="text-base sm:text-lg md:text-xl text-muted-foreground">
-                        Our software design and development agency helps
-                        businesses innovate and scale through custom web
-                        applications, UI/UX design, and enterprise solutions.
-                    </p>
+                    <div className="bg-black/50 rounded-lg">
+                        <p className=" sm:text-lg md:text-xl text-muted-foreground">
+                            Our software design and development agency helps
+                            businesses innovate and scale through custom web
+                            applications, UI/UX design, and enterprise
+                            solutions.
+                        </p>
+                    </div>
 
                     <Button className="sm:text-lg px-6 sm:px-8 py-4 sm:py-4 rounded-xl transition-all duration-300 mx-auto w-fit">
                         Start a project
